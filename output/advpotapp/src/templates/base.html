@@ -4,6 +4,7 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{% block title %}Advpot{% endblock %} · Gestão jurídica</title>
   <link rel="stylesheet" href="{% static 'app.css' %}">
+  <link rel="stylesheet" href="{% static 'intake.css' %}">
   <meta name="htmx-config" content='{"allowEval":false,"allowScriptTags":false,"selfRequestsOnly":true,"historyCacheSize":0}'>
   <script src="{% static 'vendor/htmx-2.0.8.min.js' %}" defer></script>
 </head>
@@ -18,10 +19,13 @@
       <span class="nav-label">OPERAÇÃO</span>
       <a {% if request.resolver_match.url_name == 'dashboard' %}aria-current="page"{% endif %} href="{% url 'dashboard' %}"><span aria-hidden="true">◫</span> Meu trabalho</a>
       <a {% if 'case' in request.resolver_match.url_name %}aria-current="page"{% endif %} href="{% url 'cases' %}"><span aria-hidden="true">▤</span> Casos autorizados</a>
+      {% if nav_intake %}<a href="{% url 'contacts' %}">Clientes e contatos</a><a href="{% url 'demands' %}">Atendimentos</a><a href="{% url 'handoffs' %}">Passagens ao Comercial</a>{% endif %}
+      {% if nav_business_access %}<a href="{% url 'business-access' %}">Acessos de negócio</a>{% endif %}
+      {% if nav_recovery %}<a href="{% url 'recovery' %}">Recuperar responsabilidade</a>{% endif %}
       {% if user.can_manage_identity %}<span class="nav-label">ADMINISTRAÇÃO</span><a {% if request.resolver_match.url_name == 'users' %}aria-current="page"{% endif %} href="{% url 'users' %}"><span aria-hidden="true">♧</span> Usuários e acessos</a>{% endif %}
       {% if user.can_read_audit %}<span class="nav-label">GOVERNANÇA</span><a {% if request.resolver_match.url_name == 'history' %}aria-current="page"{% endif %} href="{% url 'history' %}"><span aria-hidden="true">◷</span> Histórico de ações</a>{% endif %}
     </nav>
-    <div class="sidebar-bottom"><span class="environment">Ambiente de revisão · M1</span><p>Gestão conectada.<br>Tecnologia sob medida.</p></div>
+    <div class="sidebar-bottom"><span class="environment">Ambiente de revisão · M2-A</span><p>Gestão conectada.<br>Tecnologia sob medida.</p></div>
   </aside>
   <div class="workspace">
     <header class="topbar"><span class="breadcrumb">Delfino <span aria-hidden="true">/</span> {% block breadcrumb %}Meu trabalho{% endblock %}</span><div class="account"><div class="avatar" aria-hidden="true">{{ user.username|first|upper }}</div><div><strong>{{ user.get_full_name|default:user.username }}</strong><small>{{ user.get_role_display }}</small></div><form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="text-button" type="submit">Sair</button></form></div></header>

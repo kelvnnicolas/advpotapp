@@ -2,7 +2,7 @@
 
 **Gestão jurídica conectada. Tecnologia sob medida. Liberdade para evoluir.**
 
-Aplicação interna, atualizada em 24/11/2026. Construção M1 no workspace atual, em `output/advpotapp`. O caminho Desktop citado na estruturação anterior permanece uma referência histórica; não foi criado ou alterado.
+Aplicação interna, atualizada em 25/11/2026. Construção M1 no workspace atual, em `output/advpotapp`. O caminho Desktop citado na estruturação anterior permanece uma referência histórica; não foi criado ou alterado.
 
 **M1 implementado para revisão técnica local:** login interno, limitação persistida de tentativas, administração de contas, revogação de sessões, política por caso/ação, auditoria, interface em português e exportação mínima autorizada. PostgreSQL local criado e migrações aplicadas. Nenhuma carga Aurora ou dado real, integração externa ou implantação em VPS.
 
@@ -45,6 +45,8 @@ Os documentos anteriores de produto, implantação e comercial foram incorporado
 
 ## Sequência após a fundação M1
 
-A fundação M1 foi construída após autorização do usuário. M2 permanece proposto: contato → triagem → proposta/contratação → liberação financeira manual → documentos → distribuição ao jurídico → tarefa → histórico operacional. Validar matriz por setor, transições e exceções antes de implementar esse lote.
+A fundação M1 foi construída após autorização do usuário. O usuário definiu o fluxograma da cliente como base do M2 em 25/11/2026. A sequência não precisa ser redescoberta: recepção → comercial → financeiro inicial → organização/distribuição → execução → financeiro final.
+
+O [desenho do M2](docs/superpowers/specs/2026-11-25-m2-workflow-design.md) especifica regras de passagem, pipelines conectados e invariantes. Complementos: [fonte e leitura da foto](docs/context/DELFINO_FLOW_EVIDENCE.md), [matriz de acesso](docs/product/M2_ACCESS_MATRIX.md) e [30 cenários de aceite](docs/testing/M2_ACCEPTANCE.md). Critérios adicionais à foto estão marcados como propostas para revisão; o código M2 ainda não foi implementado.
 
 Drive/Calendar e financeiro gerencial completo têm marcos próprios. Sua ausência no primeiro lote exige convivência explícita com as ferramentas atuais; esse lote não é uma substituição integral da ADVBOX.

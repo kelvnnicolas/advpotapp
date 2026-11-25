@@ -1,5 +1,15 @@
 # Status — Advpotapp
 
+## M2 — desenho baseado no fluxograma da cliente — 25/11/2026
+
+Pedido atual: utilizar a imagem já fornecida pela cliente para criar regras do M2, fluxo e pipelines. A fonte de processo foi definida pelo usuário; não é necessário repetir diagnóstico para redescobrir as seis etapas.
+
+Entregue: evidência transcrita e cópia da fotografia com hash igual ao original; desenho M2 com sequência recepção → comercial → financeiro inicial → organização/distribuição → execução → financeiro final; visões conectadas de atendimento, preparação, execução e acompanhamento financeiro; critérios de passagem, matriz proposta por setor/registro/ação e 30 cenários de aceite. Revisão independente apontou quatro lacunas, tratadas no desenho: inicialização de acesso de negócio, encerramento sem obrigações abertas, recuperação de responsabilidade após revogação e ausência de retrocesso livre. Arquivos relacionados no README e em docs/superpowers/specs/2026-11-25-m2-workflow-design.md.
+
+Estágio: **desenho proposto para revisão**. A imagem fundamenta responsabilidades e entregas; aceite/devolução, concessões, critérios de liberação e exceções são decisões adicionais propostas pelo agente. Nenhum código, migração, carga, tela operacional M2 ou integração foi criado nesta etapa. Os testes do M1 registrados abaixo não validam as propostas do M2.
+
+Dependências para codificação: revisão explícita do desenho e das regras adicionais, seguida de plano de implementação. Homologação exige responsáveis do escritório e cenários executados no ambiente acordado. Financeiro M2 é conferência/liberação e acompanhamento manual; parcelas/recebimentos detalhados continuam no M4. Sem novo preço, prazo, serviço contratado ou disponibilidade operacional declarada.
+
 ## Atualização de construção M1 — 24/11/2026
 
 Usuário autorizou “inicie e após atualize prototipagem do projeto no stitch”, após apresentação do recorte M1 e da arquitetura Django/HTMX/PostgreSQL. Esse aceite autoriza a construção da fundação, não a disponibilidade operacional nem todos os módulos.

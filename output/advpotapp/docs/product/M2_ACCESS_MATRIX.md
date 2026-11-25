@@ -1,6 +1,6 @@
 # M2 — matriz proposta de acesso
 
-25/11/2026. Derivada das responsabilidades IMG-01–07, não de uma matriz de segurança fornecida pela cliente. Regras de implementação propostas; aguardando revisão do [desenho M2](../superpowers/specs/2026-11-25-m2-workflow-design.md).
+25/11/2026. Derivada das responsabilidades IMG-01–07, não de uma matriz de segurança fornecida pela cliente. Desenho aprovado pelo usuário para construção em 25/11/2026; M2-A implementa o subconjunto indicado em M2A_VERIFICATION.md. Homologação operacional permanece pendente.
 
 Cada célula significa uma capacidade de setor. Para consultar/alterar um registro, exigir também concessão explícita por demanda/caso e ação. “Gestão” não é superusuário e não abre todos os casos. Sem capacidade ou concessão: negar. Nenhuma atribuição será criada automaticamente a partir das contas M1.
 
@@ -27,6 +27,14 @@ Cada célula significa uma capacidade de setor. Para consultar/alterar um regist
 O administrador de acessos M1 continua administrando contas técnicas; não recebe capacidade de Gestão, de financeiro, de conceder acesso de negócio ou de leitura jurídica por implicação. Auditor M1 vê auditoria técnica; histórico de domínio e conteúdo exigem concessões próprias.
 
 ## Inicialização de negócio e primeiro registro
+
+Precisão implementada M2-A: o Comercial pode corrigir dados iniciais da demanda que ele próprio criou, enquanto ainda responsável na recepção, com `view` e `edit_intake`. Não abre recepção de terceiros, nem solução/proposta antes do aceite. A primeira passagem explícita permanece exigida, inclusive para destinatário Comercial igual ao criador. Isso resolve a criação permitida ao Comercial sem deixá-lo incapaz de corrigir sua entrada.
+
+Ações implementadas: ContactGrant `view`, `edit`, `view_history`; DemandGrant `view`, `edit_intake`, `manage_opportunity`, `view_history`, `send_handoff`, `receive_handoff`, `recover`, `manage_access`. `view` corresponde a `view_minimal` do desenho, sem dados financeiros. Demais ações continuam planejadas.
+
+Recuperação: autoridade inicial ou Gestão com `recover` previamente concedido para a demanda; o setor Gestão não cria essa concessão. Autorizar a demanda antes de carregar candidatos, limitados às capacidades da etapa. Reassociação encerra passagens pendentes bloqueadas com motivo/histórico e exige novo encaminhamento explícito.
+
+Delegado com leitura e `manage_access` usa “Gerenciar acessos desta demanda” no detalhe. Só concede/revoga ações que possui; nunca `manage_access` ou `recover`. Não administra setores ou cadastros por essa delegação.
 
 Comando interativo único designa a autoridade inicial de acesso de negócio por indicação expressa da gestão, registrando usuário ativo, referência da autorização e operador executor. Não usar access_admin como atribuição departamental nem abrir conteúdo implicitamente. A autoridade inicial pode atribuir setores e delegar gestão de concessões por escopo/registro; consultar, executar e exportar continuam exigindo concessão própria. A definição das pessoas reais só ocorre por indicação autorizada, antes do piloto.
 

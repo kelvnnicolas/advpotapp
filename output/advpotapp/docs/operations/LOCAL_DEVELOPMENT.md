@@ -15,6 +15,20 @@ O banco local fica no volume advpotapp-m1_advpot_m1_data, com porta 55432 public
 
 ## Verificação
 
+### Inicialização e uso do M2-A
+
+Após carregar `scripts/env.ps1`, aplicar `src/manage.py migrate` com o Python da .venv. A migração cria tabelas; não cria setores, autoridades, contatos ou demandas de demonstração.
+
+No terminal interativo, executar `src/manage.py bootstrap_business_authority`. Informar administrador técnico executor, sua senha oculta, conta ativa indicada pela gestão e referência da autorização expressa. Executável uma vez; não substitui recuperação de conta privilegiada. A conta indicada passa a ver “Acessos de negócio”, sem leitura implícita dos registros.
+
+Na tela de acessos de negócio, a autoridade atribui Secretaria/Comercial às contas indicadas. Contatos novos concedem ao criador leitura, edição e histórico do próprio cadastro. Demandas novas concedem leitura, edição de recepção, encaminhamento e histórico do próprio registro. Para destinatário Comercial, conceder separadamente `view`, `receive_handoff` e `manage_opportunity` na referência da demanda; `view_history` e acesso ao contato também são concessões separadas. O usuário de origem fornece a referência completa do registro à autoridade.
+
+Em “Clientes e contatos”, reutilizar cadastro visível ou registrar novo. Em “Atendimentos”, abrir demanda e manter necessidade, origem e próximo passo. Encaminhar ao destinatário habilitado; a responsabilidade permanece na origem. O destinatário acessa “Passagens ao Comercial” e aceita ou devolve com motivo. Após aceitar, atualiza solução/proposta e avança sequencialmente. Lista e quadro compartilham os filtros e a página de até 20 registros.
+
+Se uma revogação/desativação impedir a atuação do responsável, a demanda passa à fila “Recuperar responsabilidade”. A gestão indicada configura as concessões do novo responsável antes de reassociar. A reassociação encerra passagens pendentes bloqueadas com histórico; um novo encaminhamento explícito é necessário. Gestão só recupera com ação recover previamente concedida para a demanda; setor Gestão isolado não basta.
+
+O recorte termina em “Preparar formalização”: sem contrato, caso ou efeito financeiro. [Evidências e limitações](../testing/M2A_VERIFICATION.md). Não inserir dados reais para experimentar este ambiente de revisão.
+
 Executar `powershell -ExecutionPolicy Bypass -File scripts/test.ps1` para testes PostgreSQL, ausência de migrações pendentes e check Django. `-SQLite` permite o ciclo rápido, mas não verifica bloqueio de linha nem concorrência do PostgreSQL.
 
 Para a jornada visual: carregar env.ps1, definir ADVPOT_BROWSER_TESTS=1 e executar `src/manage.py test tests --settings=config.test_postgres` com o Python da .venv. Os dados fictícios são criados no banco temporário test_advpot e removidos ao final. Não há carga Aurora nem usuário demonstrativo permanente. Capturas ficam em .stitch/previews. Não executar duas suítes PostgreSQL simultaneamente sobre o mesmo nome de banco de teste.

@@ -57,6 +57,9 @@ class DemandEditForm(forms.ModelForm):
         if self.instance.journey_stage == 'commercial':
             for field in ['title', 'need', 'origin', 'area']:
                 self.fields.pop(field)
+        else:
+            for field in ['solution', 'proposal']:
+                self.fields.pop(field)
 
 
 class VersionedForm(forms.Form):
@@ -112,4 +115,27 @@ class BusinessAccessForm(forms.Form):
 
 
 class RecoveryForm(VersionedForm):
-    target = forms.ModelChoiceField(label='Novo responsável', queryset=User.objects.filter(is_active=True).order_by('username'))
+    target = forms.ModelChoiceField(label='Novo responsável', queryset=User.objects.none())
+
+    def __init__(self, *args, demand, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['target'].queryset = access.recovery_candidates(demand)
+
+
+class DelegatedAccessForm(BusinessAccessForm):
+    def __init__(self, *args, actor, demand, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.demand = demand
+        self.fields['kind'].choices = [('demand', 'Acesso a demanda')]
+        self.fields['kind'].widget = forms.HiddenInput()
+        self.fields['record_id'].widget = forms.HiddenInput()
+        self.initial.update(kind='demand', record_id=demand.pk)
+        self.fields.pop('department')
+        actions = set(DemandGrant.objects.filter(user=actor, demand=demand).values_list('action', flat=True)) - {'recover', 'manage_access'}
+        self.fields['action'].choices = [(value, label) for value, label in DemandGrant.Action.choices if value in actions]
+
+    def clean(self):
+        data = super().clean()
+        if data.get('record_id') != self.demand.pk:
+            self.add_error(None, 'A concessão deve se referir à demanda desta página.')
+        return data

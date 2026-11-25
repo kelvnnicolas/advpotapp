@@ -1,6 +1,6 @@
 # M2 — fluxo e pipelines da Delfino
 
-25/11/2026 · Desenho v1 para revisão. Pedido do usuário: usar o fluxograma fornecido pela cliente para criar as regras do M2 e construir fluxo/pipelines. Fonte de processo definida pelo usuário; critérios adicionais abaixo são propostas do Advpot, não confirmações atribuídas à cliente.
+25/11/2026 · Desenho v1 aprovado pelo usuário para construção do M2-A; demais lotes planejados e homologação pendente. Pedido do usuário: usar o fluxograma fornecido pela cliente para criar as regras do M2 e construir fluxo/pipelines. Fonte de processo definida pelo usuário; critérios adicionais abaixo são propostas do Advpot, não confirmações atribuídas à cliente.
 
 ## 1. Objetivo, fronteira e estágio
 

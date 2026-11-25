@@ -12,6 +12,8 @@ Protótipos: [Advpotapp — Delfino no Stitch](https://stitch.withgoogle.com/pro
 
 ## Decisões e limites
 
+**M2-A aprovado e implementado para revisão local:** clientes/contatos, demandas, lista/quadro comercial e passagem Secretaria → Comercial com aceite, concessões por registro, histórico e recuperação de responsabilidade. [Evidências do recorte](docs/testing/M2A_VERIFICATION.md). Contratação e financeiro permanecem nos próximos lotes; sem disponibilidade operacional declarada.
+
 - **Confirmado pelo usuário:** começar por uma aplicação interna exclusiva da Delfino. Atendimento a outros escritórios é evolução posterior.
 - **Diretriz de produto:** implantação inicial em VPS, Google Workspace como colaboração e Advpot como fonte dos fluxos jurídicos.
 - **Arquitetura autorizada para M1:** monólito modular em Django, páginas HTML com HTMX e PostgreSQL. Dependências fixadas; decisões e limites em docs/architecture/DECISIONS.md. Sem microsserviços ou SaaS multiempresa.
@@ -47,6 +49,6 @@ Os documentos anteriores de produto, implantação e comercial foram incorporado
 
 A fundação M1 foi construída após autorização do usuário. O usuário definiu o fluxograma da cliente como base do M2 em 25/11/2026. A sequência não precisa ser redescoberta: recepção → comercial → financeiro inicial → organização/distribuição → execução → financeiro final.
 
-O [desenho do M2](docs/superpowers/specs/2026-11-25-m2-workflow-design.md) especifica regras de passagem, pipelines conectados e invariantes. Complementos: [fonte e leitura da foto](docs/context/DELFINO_FLOW_EVIDENCE.md), [matriz de acesso](docs/product/M2_ACCESS_MATRIX.md) e [30 cenários de aceite](docs/testing/M2_ACCEPTANCE.md). Critérios adicionais à foto estão marcados como propostas para revisão; o código M2 ainda não foi implementado.
+O [desenho do M2](docs/superpowers/specs/2026-11-25-m2-workflow-design.md) especifica regras de passagem, pipelines conectados e invariantes. Complementos: [fonte e leitura da foto](docs/context/DELFINO_FLOW_EVIDENCE.md), [matriz de acesso](docs/product/M2_ACCESS_MATRIX.md) e [30 cenários de aceite](docs/testing/M2_ACCEPTANCE.md). Desenho e início do M2-A aprovados pelo usuário em 25/11/2026. Recorte A implementado; B/C/D planejados. Aprovação de construção não equivale à homologação da cliente.
 
 Drive/Calendar e financeiro gerencial completo têm marcos próprios. Sua ausência no primeiro lote exige convivência explícita com as ferramentas atuais; esse lote não é uma substituição integral da ADVBOX.

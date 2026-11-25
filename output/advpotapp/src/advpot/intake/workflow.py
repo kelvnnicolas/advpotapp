@@ -64,9 +64,13 @@ def update_demand(*, actor, demand_id, expected_version, operation_key, data):
         return demand
     _owned_open(actor, demand)
     _no_pending(demand)
-    allowed = ['next_step', 'next_step_on', 'solution', 'proposal']
+    allowed = ['next_step', 'next_step_on']
     if demand.journey_stage == 'reception':
+        if {'solution', 'proposal'} & data.keys():
+            raise ValidationError('Solução e proposta são registradas pelo Comercial após o aceite.')
         allowed += ['title', 'need', 'origin', 'area']
+    else:
+        allowed += ['solution', 'proposal']
     changes = {}
     for field in allowed:
         if field in data:
@@ -184,6 +188,8 @@ def require_no_owned_work(user, *, department):
         raise ValidationError('Reassocie as demandas abertas antes de retirar o setor.')
     if department == 'commercial' and CommercialHandoff.objects.filter(target=user, state='pending').exists():
         raise ValidationError('Há passagens aguardando esse destinatário. Reorganize-as antes de retirar o setor.')
+    if department == 'commercial' and 'secretariat' not in access.departments(user) and Demand.objects.filter(responsible=user, created_by=user, status='open', journey_stage='reception').exists():
+        raise ValidationError('Reassocie suas demandas de entrada antes de retirar o setor.')
 
 
 def recover_if_unable(*, actor, user, demands=None):
@@ -198,8 +204,9 @@ def recover_if_unable(*, actor, user, demands=None):
         demand.responsible, demand.recovery_queue = None, queue
         demand.version += 1
         demand.save(update_fields=['responsible', 'recovery_queue', 'version'])
-        recipients = set(BusinessAssignment.objects.filter(department='management', user__is_active=True).values_list('user_id', flat=True))
-        recipients.update(BusinessAuthority.objects.values_list('user_id', flat=True))
+        # A department alone never designates a recovery manager. Existing
+        # per-demand recovery grants remain; only the initial authority is added.
+        recipients = set(BusinessAuthority.objects.filter(user__is_active=True).values_list('user_id', flat=True))
         for recipient in recipients:
             DemandGrant.objects.get_or_create(user_id=recipient, demand=demand, action='recover')
         CommercialHandoff.objects.filter(demand=demand, state='pending').update(blocked=True)
@@ -219,8 +226,15 @@ def recover_demand(*, actor, demand_id, target_id, expected_version, operation_k
     if not demand.recovery_queue_id:
         raise ValidationError('Esta demanda não está na fila de recuperação.')
     target = get_object_or_404(User, pk=target_id)
-    if not _can_execute(target, demand, reception=demand.journey_stage == 'reception'):
+    if not access.recovery_candidates(demand).filter(pk=target.pk).exists():
         raise ValidationError('O novo responsável precisa de setor, leitura e ação adequados à etapa.')
     demand.responsible, demand.recovery_queue = target, None
+    for handoff in CommercialHandoff.objects.filter(demand=demand, state='pending').select_for_update():
+        handoff.state = 'cancelled'
+        handoff.blocked = True
+        handoff.reason = 'Passagem encerrada na recuperação de responsabilidade; novo encaminhamento necessário.'
+        handoff.decided_at = timezone.now()
+        handoff.save(update_fields=['state', 'blocked', 'reason', 'decided_at'])
+        event(actor=actor, demand=demand, action='handoff.recovery_cancel', previous='pending', new='cancelled', reason=handoff.reason)
     _finish(actor=actor, demand=demand, key=key, digest=digest, action='demand.reassign', previous='recovery_queue', new=target.pk)
     return demand

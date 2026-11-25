@@ -129,6 +129,7 @@ def demand_detail(request, pk):
     return render(request, 'intake/demand_detail.html', {
         'demand': demand, 'contact': contact, 'pending': pending,
         'can_edit': owned and not pending and allowed(action),
+        'can_manage_access': allowed('manage_access'),
         'stage_form': forms.StageForm(initial=initial) if owned and not pending and demand.journey_stage == 'commercial' and allowed('manage_opportunity') else None,
         'send_form': forms.SendHandoffForm(demand=demand, initial=initial) if owned and not pending and demand.journey_stage == 'reception' and allowed('send_handoff') else None,
         'cancel_form': forms.CancelHandoffForm(initial=initial) if owned and pending and allowed('send_handoff') else None,
@@ -209,18 +210,27 @@ def business_access(request):
 
 @login_required
 def recovery(request):
-    if access.is_authority(request.user):
-        records = Demand.objects.filter(recovery_queue__isnull=False)
-    elif 'management' in access.departments(request.user):
-        records = Demand.objects.filter(recovery_queue__isnull=False, pk__in=DemandGrant.objects.filter(user=request.user, action='recover').values('demand_id'))
-    else:
+    if not access.is_authority(request.user) and 'management' not in access.departments(request.user):
         raise PermissionDenied
+    records = access.recoverable_demands(request.user)
     current_page = page(request, records)
-    items = [{'id': item.pk, 'stage': item.get_journey_stage_display(), 'form': forms.RecoveryForm(initial={'expected_version': item.version})} for item in current_page.object_list]
+    items = [{'id': item.pk, 'stage': item.get_journey_stage_display(), 'form': forms.RecoveryForm(demand=item, initial={'expected_version': item.version})} for item in current_page.object_list]
     return render(request, 'intake/recovery.html', {'items': items, 'page_obj': current_page})
 
 
 @login_required
 @require_POST
 def recover(request, pk):
-    return command_response(request, forms.RecoveryForm(request.POST), lambda data: workflow.recover_demand(actor=request.user, demand_id=pk, target_id=data['target'].pk, expected_version=data['expected_version'], operation_key=data['operation_key']), back='/gestao/recuperacao/')
+    if not access.is_authority(request.user) and 'management' not in access.departments(request.user):
+        raise PermissionDenied
+    demand = get_object_or_404(access.recoverable_demands(request.user), pk=pk)
+    return command_response(request, forms.RecoveryForm(request.POST, demand=demand), lambda data: workflow.recover_demand(actor=request.user, demand_id=pk, target_id=data['target'].pk, expected_version=data['expected_version'], operation_key=data['operation_key']), back='/gestao/recuperacao/')
+
+
+@login_required
+def demand_access(request, pk):
+    demand = get_object_or_404(access.visible_demands(request.user, 'manage_access'), pk=pk)
+    form = forms.DelegatedAccessForm(request.POST or None, actor=request.user, demand=demand)
+    if request.method == 'POST':
+        return command_response(request, form, lambda data: services.grant_demand_action(actor=request.user, target=data['target'], demand_id=pk, action=data['action'], enabled=data['enabled']), back=f'/atendimentos/{pk}/acessos/')
+    return render(request, 'intake/form.html', {'form': form, 'heading': 'Acessos desta demanda', 'back_url': f'/atendimentos/{pk}/'})

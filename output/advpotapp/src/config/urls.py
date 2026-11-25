@@ -14,6 +14,7 @@ urlpatterns = [
     path('atendimentos/novo/', intake.demand_create, name='demand-create'),
     path('atendimentos/<uuid:pk>/', intake.demand_detail, name='demand-detail'),
     path('atendimentos/<uuid:pk>/editar/', intake.demand_edit, name='demand-edit'),
+    path('atendimentos/<uuid:pk>/acessos/', intake.demand_access, name='demand-access'),
     path('atendimentos/<uuid:pk>/etapa/', intake.demand_stage, name='demand-stage'),
     path('atendimentos/<uuid:pk>/encaminhar/', intake.handoff_send, name='handoff-send'),
     path('atendimentos/<uuid:pk>/cancelar-passagem/', intake.handoff_cancel, name='handoff-cancel'),

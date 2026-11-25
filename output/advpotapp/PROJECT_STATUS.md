@@ -1,5 +1,13 @@
 # Status — Advpotapp
 
+## M2-A — construção autorizada — 25/11/2026
+
+Usuário aprovou desenho e continuidade. Implementado clientes/contatos, demandas vinculadas, pipeline comercial, primeira passagem Secretaria → Comercial com aceite, setor e concessões por registro/ação, histórico e recuperação após revogação. Contratação e financeiro permanecem nos próximos lotes.
+
+Estágio: **em desenvolvimento, verificação técnica local**. PostgreSQL: 60 testes aprovados, três jornadas de navegador e concorrência real. Django check e migrações sem pendências. [Evidências e limites](docs/testing/M2A_VERIFICATION.md). Revisão independente concluída e seis achados relevantes corrigidos com regressões; uma pendência menor de opções de etapa registrada. Sem homologação ou produção. Capturas locais M2-A; nenhuma nova tela publicada no Stitch nesta etapa. Nenhum dado real, carga Aurora, integração ou VPS. Nenhum preço, prazo comercial ou disponibilidade operacional aprovado.
+
+As seções seguintes preservam o registro histórico anterior à implementação do M2-A.
+
 ## M2 — desenho baseado no fluxograma da cliente — 25/11/2026
 
 Pedido atual: utilizar a imagem já fornecida pela cliente para criar regras do M2, fluxo e pipelines. A fonte de processo foi definida pelo usuário; não é necessário repetir diagnóstico para redescobrir as seis etapas.

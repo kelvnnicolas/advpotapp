@@ -1,0 +1,44 @@
+# Status — Advpotapp
+
+## Atualização de construção M1 — 24/11/2026
+
+Usuário autorizou “inicie e após atualize prototipagem do projeto no stitch”, após apresentação do recorte M1 e da arquitetura Django/HTMX/PostgreSQL. Esse aceite autoriza a construção da fundação, não a disponibilidade operacional nem todos os módulos.
+
+Estágio: **em desenvolvimento, com verificação técnica local concluída para o recorte descrito**. Aguardando revisão e homologação do responsável; sem aceite da Delfino e sem produção. Base executável em src/, configuração local em scripts/ e deploy/, 28 testes aprovados no PostgreSQL incluindo dois cenários de navegador e concorrência da inicialização. Ver docs/testing/M1_VERIFICATION.md.
+
+Entregue no recorte: sessão interna com CSRF e limite de tentativas, contas/perfis técnicos, desativação e revogação, auditoria restrita, envelope mínimo de caso com leitura/exportação explícitas e busca/paginação autorizadas. Interface portuguesa responsiva e HTMX servido localmente.
+
+Sem carga de dados da cliente ou Aurora. Banco local criado vazio; contas e casos dos testes ficam em banco temporário descartado. Integrações desligadas por ausência de adaptadores/configuração. Nenhuma VPS provisionada, comunicação enviada ou migração executada.
+
+M2–M6 continuam propostos. Pendências antes do piloto/produção: perfis departamentais e acesso operacional por caso, recuperação de conta, MFA privilegiado, HTTPS/proxy/static, monitoramento, backup externo/restauração e aceite. Exportação M1 é do envelope mínimo, não exportação integral do produto.
+
+Prototipagem atualizada no projeto Stitch 10692539038282260634, preservando o sistema Ateliê Jurídico e as referências anteriores; detalhes e IDs em .stitch/metadata.json. Protótipos são material de revisão.
+
+## Registro histórico — estruturação anterior à implementação
+
+Data: 24/11/2026 · America/Sao_Paulo.
+
+## Estruturação
+
+Pedido atendido nesta etapa: reunir posicionamento comercial, dossiê, dados sintéticos, fluxo do escritório e informações públicas da Delfino para preparar a criação da aplicação no diretório solicitado.
+
+Confirmado pelo usuário: primeira versão interna e exclusiva da Delfino. VPS e Workspace derivam do posicionamento anterior. Stack, regras detalhadas, matriz de acesso e marcos são recomendações para revisão.
+
+Foram consultados os documentos do workspace anterior, AGENTS/README/status do dossiê, arquitetura, regras, UX, roadmap, revisões de dados, pacote sintético e cenários complementares; também a fotografia do fluxo e o texto dos 12 slides da proposta preliminar local. O site institucional foi lido no navegador após uma verificação inicial do próprio site.
+
+## Situação técnica
+
+Aplicação executável: não criada. Dependências: não instaladas. Banco: não criado. Dados: nenhuma carga. Serviços externos: nenhum provisionamento, autenticação de conta, envio ou integração ativada. Originais: preservados.
+
+## Conciliações importantes
+
+- VPS substitui a arquitetura de servidor local da apresentação antiga; os preços e prazos daquela apresentação não foram reaproveitados como oferta atual.
+- Financeiro aparece no primeiro fluxo como conferência e liberação manual. Parcelas/recebimentos e encerramento dependem de marco específico antes de uma substituição integral do sistema atual.
+- U01 sobre entrega/compromisso foi mantida; não foi confundida com prazo fatal.
+- Dados de teste pertencem a um escritório fictício, não à Delfino.
+
+## Próxima etapa
+
+Revisar o desenho, fechar as decisões que bloqueiam o lote inicial e autorizar sua implementação. As perguntas de operação, financeiro, Workspace e migração estão classificadas em docs/decisions/OPEN_QUESTIONS.md. Construção e produção possuem critérios distintos.
+
+As verificações documentais desta entrega ficam registradas em docs/testing/DELIVERY_CHECK.md. Nenhum resultado de pesquisa ou auditoria local foi apresentado como teste funcional do Advpotapp.

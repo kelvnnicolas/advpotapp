@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-24",
+  "note": "Inventario de proveniencia. Inclusao nao significa leitura integral individual, compatibilidade de importacao ou dados carregados. PROJECT_STATUS pai recebera acrescimo de continuidade; hash registra versao anterior.",
+  "files": [
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\AGENTS.md",
+      "bytes": 1656,
+      "sha256": "9131f9026cb76902a68bd2bfd0eacb99c8f94e4d51a1f302ac623cdb97b02a1d",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\README.md",
+      "bytes": 3869,
+      "sha256": "3cf5f923ae9aa1fbd6537ffb17706e9166f835fdee1e37f149519493db1ce443",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\PROJECT_STATUS.md",
+      "bytes": 8371,
+      "sha256": "18bf5a06664b7bee8d5a0ed3aebe82bef4cbb2536e33a93d08c6e59a092cd37b",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\fluxogramaclientedelfino.jpeg",
+      "bytes": 127979,
+      "sha256": "138c8bf45f5c51b477c01ce6a7cdeed003cc1850189ddbdc1335dbc58e8fbd00",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\proposta_delfino_gestao_local.pptx",
+      "bytes": 33756,
+      "sha256": "5bfe604d921f394a4777d7ed17ad14022e568a0096b82483fc8f4fb6cff9ac58",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\api\\contracts-customers-settings.md",
+      "bytes": 1846,
+      "sha256": "3eaffe014d900c572b098225bf4fe1769e06752bf15e58e4a52e87308ae6aee2",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\api\\contracts-finance-documents.md",
+      "bytes": 12527,
+      "sha256": "737e0f3a39604f06171376b9d8dc446d26a189dc6baa7dcc981d85cb0b16a839",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\api\\contracts-processes-tasks.md",
+      "bytes": 7494,
+      "sha256": "ec5f033657b4559602ac677ea0a37d02dcf89a372ac0f09efd43ca26a8059618",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\api\\observed-endpoints.md",
+      "bytes": 2117,
+      "sha256": "29d6102cc5d5eb021e39029ceb9f7a3f33bf51afdfe9cfb25d664bedafc278fb",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\api\\official-api.md",
+      "bytes": 9361,
+      "sha256": "2fdf5d961ec2334c73d97fddc99f0c9c32c1a93574554defcd03b93dd2883552",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\architecture\\entity-relationship.md",
+      "bytes": 3118,
+      "sha256": "366369ab06668401043887ee75761a07af368ce7d6e7fc73636c34e9b74c84b9",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\architecture\\integrations-map.md",
+      "bytes": 3358,
+      "sha256": "3fea2bdb5bbc907db72ae5ea3f43b3dcaf29c006d1c632358082894572b5096f",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\architecture\\system-overview.md",
+      "bytes": 2186,
+      "sha256": "50b4f19ab4cf1dd7c7216e621eda6c848f353177c534b215fd3aa605d9062f0f",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\architecture\\technology-stack.md",
+      "bytes": 1254,
+      "sha256": "d6222cd7c846558623cff390b32851bebe8bb27eeae751a27c8f6fe46c48e528",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\evidence\\browser-session.md",
+      "bytes": 5992,
+      "sha256": "33f3de5f2086de1373665b75c1002c71e626f7fab315e6918bbbb9abbb243d3c",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\evidence\\functional-sources.md",
+      "bytes": 3736,
+      "sha256": "f591c7fecb9f9d118d34410c0f0a7a0a7e14a578c200b27cd044da7791964f90",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\functional\\feature-inventory.md",
+      "bytes": 11483,
+      "sha256": "1a99b32d2bda6612b00dda21040d41c25f76d7222192de37d1c1125ebe455bc0",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\data-quality-report.md",
+      "bytes": 10771,
+      "sha256": "9fbad78446be6431a0f0bc1230596b78b3272c6934d4dfeea02a5bb027aa3712",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\dataset-compatibility.md",
+      "bytes": 34613,
+      "sha256": "7e15cd4e31afb77a6419e32e857c95d0b1d2e5968d07fa5f047ea6adfa02c6cb",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\execution-log.md",
+      "bytes": 1628,
+      "sha256": "36bae593af60d55667297fca2ce8f052d1f58ffdc0fd92096b06591c5018b1ee",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\mapping-review.md",
+      "bytes": 5073,
+      "sha256": "8345d22d8b5af4296060cfc326bb5ea5c14daa1cdc7c6ca8ad8735656acf66c8",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\review-checklist.md",
+      "bytes": 1974,
+      "sha256": "d2e9eb7040cbd9878fdbc61d7e4d5aa2791d86706e31ff3b1571f14ec4815f74",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\scenario-proposals.md",
+      "bytes": 4143,
+      "sha256": "3d695df0d0ba3cd97b3940431e86107aefa5fb8fa28384404dfaf316a4c3271d",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\scenario-validation.md",
+      "bytes": 1869,
+      "sha256": "6763dda4fa07521ce3805f68b32c1b286c8a82369e5f9a97e6bd2fa5d81f5708",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\seed-plan.md",
+      "bytes": 9146,
+      "sha256": "ab3a072f4f68ef0f72a26350be4130af026c092a84c5a48e2dd672802e7c3365",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\testing\\test-matrix.md",
+      "bytes": 12949,
+      "sha256": "01afc91308daaf595b48e7c6fd05d53a5653a0c10f84ae802a95b29622224b5b",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\ux\\components.md",
+      "bytes": 1680,
+      "sha256": "aabe1d131a8bcb86bb44cd9c279d62a1e4e68c9f223bba661721345826558f53",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\ux\\navigation.md",
+      "bytes": 2244,
+      "sha256": "2ce365038e0b00b7505e1ee633fee4025a8acbef55d71c6384119a2720535b07",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\ux\\usability-analysis.md",
+      "bytes": 3509,
+      "sha256": "a4a0c47e7137b51f5ef4c51e801b9cbfd63b66d6951a2971259b93bcd3c97703",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\docs\\workflows\\business-rules.md",
+      "bytes": 4329,
+      "sha256": "88cc11728b4aaff7d15d8c2bf3a8d1c8545ff03ee1f5a29e09fdd350b3386044",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\backlog\\implementation-roadmap.md",
+      "bytes": 3748,
+      "sha256": "bdb32d5122afdcade324192bc69d78e74e6914417b030aafd8d79e288661cabe",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\CODEX-MAPPING-PROMPT.md",
+      "bytes": 1889,
+      "sha256": "ecc0ede78c6e9fa21a5f1971b5da02faf630e7a59a1514224e4788bdff06a538",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\communications.csv",
+      "bytes": 283,
+      "sha256": "21b4c2b77893c8af512276d0054456d06f8f1e3650e83cdaadb1c5c6c3f49621",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\customers.csv",
+      "bytes": 1249,
+      "sha256": "b80d9c4e14cc3b1d006ab82ef5703c0c9eca22c3c09b0eb0efa2bad50cc2b36d",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\data-dictionary.md",
+      "bytes": 1567,
+      "sha256": "fd3ccee3e27415fcbfcf3423f01938959674b48009354ac6812b29ed5ec364c8",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\dataset.json",
+      "bytes": 15711,
+      "sha256": "e2cb0ffc8322e6ff9510d857d680b2e2a866e1ba36f28d97948d5ae1b6323884",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\documents.csv",
+      "bytes": 460,
+      "sha256": "a3caad00e0f3efbd6317f965110c5a12bbce1b98db46dd29807725664f7ce8f8",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\lawsuits.csv",
+      "bytes": 1586,
+      "sha256": "f1db7d23d557ec0ec706b030ce5057c447e8bb8927688f1ad8d3c27c9eec89af",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\leads.csv",
+      "bytes": 256,
+      "sha256": "038ee91d472be90e3cbc86be111f8d4cc351f430db67743169c180ce30c51f3c",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\publications.csv",
+      "bytes": 662,
+      "sha256": "abdc6abc1659a5a4a35d611e69a76e9d8646f94b63b95915c1197fc887eeb3a6",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\README.md",
+      "bytes": 1133,
+      "sha256": "92789dddbef1d8f39181971acc6d8530e9b981974eb381f983e6a5c42d1b70fb",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\tasks.csv",
+      "bytes": 1169,
+      "sha256": "7fa3446c8e47c00598f54f80354ab4b662b4da6cc748c167bc7a7b247121b77c",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\test-scenarios.md",
+      "bytes": 2417,
+      "sha256": "84cac1c7d5d66f4021adcb26403b96aaf15f08f677472dd8d4503b53fc562801",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\transactions.csv",
+      "bytes": 741,
+      "sha256": "703a4d5f57727f5ee7628aae89a23e7d331df9301fd33c538d71e527ce35c3fa",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\advbox-synthetic-test-data\\users.csv",
+      "bytes": 670,
+      "sha256": "6e976a86653f96352c7bba20db2f8c2e4230772d5c616c5a5ac7d62167992042",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\proposals\\v1\\document-examples\\Checklist_proposta_DEMO.txt",
+      "bytes": 489,
+      "sha256": "b33c32d5618f78eb21994858952c0a2a86e6e48ecf19199034e0679fd8b67645",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\proposals\\v1\\README.md",
+      "bytes": 925,
+      "sha256": "9123e0322874376ec174e37d403c810b06f5294c448da6019d5053ed41839f33",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Desktop\\projetos\\advpot\\data\\synthetic\\proposals\\v1\\scenarios.json",
+      "bytes": 7360,
+      "sha256": "88319fa55b7c8431ac368d558c4107d99a862b1bb6c37e4c9e3bcad8911abedf",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Documents\\ChatGPT\\advpot\\docs\\product\\PRODUCT_STRATEGY.md",
+      "bytes": 4570,
+      "sha256": "32842498c95477b73ffaea168e6238cd5e744b427e815c3971f3b70b4e87d209",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Documents\\ChatGPT\\advpot\\docs\\product\\PRODUCT_BLUEPRINT.md",
+      "bytes": 7029,
+      "sha256": "73a4af03b207ab956ae8506a56912939938edef8e35014804a9c21ee8a55373d",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Documents\\ChatGPT\\advpot\\docs\\project\\PROJECT_PLAYBOOK.md",
+      "bytes": 4897,
+      "sha256": "87cf59acb441c1a39d7b7c6ed7790db564e9e697703fe6a027b0195df5df5804",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Documents\\ChatGPT\\advpot\\docs\\commercial\\COMMERCIAL_STRATEGY.md",
+      "bytes": 4965,
+      "sha256": "fa6e2ce0afcffb4164a3978f7dcfd04f4b6b0fba46ed9e6d18ca1b37b8d7d157",
+      "role": "source_inventory"
+    },
+    {
+      "source_path": "C:\\Users\\Kelvin Oliveira\\Documents\\ChatGPT\\advpot\\docs\\commercial\\PROPOSAL_TEMPLATE.md",
+      "bytes": 7025,
+      "sha256": "2d7bb1a4b79686b4364c62129957afea1dcd73b7352df7ecfbed2dbd93b67e14",
+      "role": "source_inventory"
+    }
+  ]
+}

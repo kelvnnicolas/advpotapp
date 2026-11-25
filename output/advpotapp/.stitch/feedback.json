@@ -1,0 +1,38 @@
+[
+  {
+    "text": "A tela **Advpotapp M1 — Acesso interno — /entrar/** foi criada utilizando o design system **Ateliê Jurídico**, preservando todas as telas existentes no projeto.\n\n### O que foi implementado:\n- **Layout Split-Screen (Desktop-first responsivo):**\n  - **Painel esquerdo (Narrativa institucional):** Fundo em petróleo profundo (`#0d232a`), marca **advpot** com indicador do workspace **Delfino**, mensagem *\"Gestão jurídica conectada\"*, título *\"Contexto para decidir. Clareza para agir.\"* e subtítulo sobre organização de responsabilidades no escritório, sem fotografias, pessoas reais, estatísticas ou garantias de segurança.\n  - **Painel direito (Formulário de acesso):** Superfície em marfim suave (`#fcf9f1` / `#ffffff`) com o selo **ACESSO INTERNO**, título *\"Bem-vindo ao Advpot\"*, instrução *\"Entre com o acesso fornecido pelo administrador.\"*, campos rotulados **Usuário** e **Senha** (mascarada, sem exemplos de credenciais) e botão único **Entrar no meu espaço**.\n- **Recuperação e estado de erro:**\n  - Orientação administrativa: *\"Precisa recuperar o acesso? Procure o administrador do escritório.\"*\n  - Nota compacta e não bloqueante para falha genérica de login: *\"Não foi possível entrar. Confira seus dados ou procure o administrador.\"*\n- **Rodapé:** *\"Protótipo de revisão M1 · Sem integrações externas\"*, sem registro público, login social/Google SSO, dashboards ou módulos financeiros."
+  },
+  {
+    "suggestion": "Ajustar espaçamento ou tipografia do formulário"
+  },
+  {
+    "suggestion": "Criar versão mobile da tela de login"
+  },
+  {
+    "suggestion": "Gerar a tela inicial pós-login (/meu-trabalho/)"
+  },
+  {
+    "text": "A tela **Advpotapp M1 — Meu trabalho — `/meu-trabalho/`** foi criada com sucesso, respeitando integralmente o escopo da fundação M1 e o design system do projeto:\n\n### O que foi implementado:\n1. **Estrutura de Shell e Navegação Restrita (M1):**\n   - **Barra lateral persistente:** Identidade da plataforma `advpot` com indicação de workspace `Delfino`, contendo unicamente os módulos de fundação: *Meu trabalho*, *Casos autorizados* e *Usuários e acessos*. Na base, identificador discreto *Ambiente de revisão · M1*. Excluídos intencionalmente módulos judiciais, financeiros, CRM, prazos ou documentos operacionais.\n   - **Cabeçalho superior:** Breadcrumb `Delfino / Meu trabalho`, perfil autenticado `Revisão Fictícia` no papel de `Administrador de acessos` e botão secundário `Sair`, sem dados pessoais reais.\n   - **Rodapé de integridade:** Identificadores `Advpot · Uso interno` e `Protótipo de revisão M1 · Sem integrações externas`.\n\n2. **Área de Conteúdo e Visão Geral:**\n   - **Acolhimento e Status:** Título *\"Bom trabalho, Revisão.\"*, subtítulo contextual e tag compacta de status `FUNDAÇÃO M1`.\n   - **Painel bipartido de controle de acesso:**\n     - *Sob seu acesso:* Exibição de `00 casos autorizados` com nota explicativa de concessão explícita por isolamento (demonstração de estado vazio por regra de segurança, sem métricas de vaidade) e botão de ação `Consultar casos`.\n     - *Acesso individual:* Bloco explicativo sobre a independência entre o papel funcional e a custódia/leitura de casos.\n   - **Seção \"Comece por aqui\":** Atalhos em cards para as duas ações-chave de governança (*Casos autorizados* e *Usuários e acessos*).\n   - **Faixa de alinhamento de escopo futuro:** Faixa informativa discreta `PRÓXIMA ENTREGA · PROPOSTA M2`, esclarecendo que fluxos de atendimento, passagens de bastão, prazos e tarefas pertencem ao escopo M2 após a homologação da fundação de segurança.\n\n3. **Fidelidade Visual:**\n   - Paleta sofisticada do *Ateliê Jurídico* com fundo marfim suave (`#fcf9f1`), acentos profundos (`#0d232a`), tipografia refinada e hierarquia sóbria voltada a ferramenta interna de trabalho."
+  },
+  {
+    "suggestion": "Gerar a tela de Casos autorizados (/casos-autorizados/) no escopo M1"
+  },
+  {
+    "suggestion": "Gerar a tela de Usuários e acessos (/usuarios-e-acessos/) no escopo M1"
+  },
+  {
+    "suggestion": "Ajustar detalhes ou textos do painel de Meu trabalho"
+  },
+  {
+    "text": "A nova tela de revisão **\"Advpotapp M1 — Usuários e acessos — /administracao/usuarios/\"** foi criada com sucesso, integrada ao ecossistema do projeto Delfino e em conformidade estrita com o escopo da fundação Django M1.\n\n### Destaques da Estruturação e Decisões de Design:\n\n1. **Navegação e Estrutura da Shell (M1):**\n   - **Sidebar Persistente:** Identidade visual `advpot M1` com indicador de workspace `WORKSPACE DELFINO`, menu exclusivo com os três módulos M1 (*Meu trabalho*, *Casos autorizados* e *Usuários e acessos* ativo) e rodapé `Ambiente de revisão · M1`.\n   - **Cabeçalho / Topbar:** Breadcrumb `Delfino / Administração / Usuários`, perfil autenticado `Revisão Fictícia` (com papel *Administrador de acessos*) e ação direta de `Sair`.\n   - **Rodapé:** Mantido com as tags normativas `Advpot · Uso interno` e `Protótipo de revisão M1 · Sem integrações externas`.\n\n2. **Aviso Institucional de Segregação de Custódia:**\n   - Destaque sóbrio em banner com ícone de proteção: *\"Administrar acessos não concede leitura dos casos. As concessões são individuais por registro e ação.\"*, reforçando a conformidade com as regras de isolamento hermético entre permissões administrativas e custódia processual.\n\n3. **Formulário de Busca e Tabela de Usuários Fictícios:**\n   - Campo de busca *\"Nome ou usuário\"* com botão *\"Buscar\"* e indicação visual explícita `Dados fictícios para revisão`.\n   - Tabela responsiva com as 4 contas nominais e exatas de homologação:\n     - `revisao.m1` (Revisão Fictícia) — Administrador de acessos / Ativo / Acesso autenticado · Sessão atual.\n     - `profissional.exemplo` (Profissional Fictício) — Profissional / Ativo / Regular · Sem restrição interna.\n     - `auditor.exemplo` (Auditor Fictício) — Auditor / Ativo / Consulta de trilhas de auditoria.\n     - `apoio.exemplo` (Apoio Fictício) — Profissional / Desativado / Bloqueado no login.\n   - Ação de linha `Gerenciar` com alvos de clique confortáveis e acessíveis.\n\n4. **Painel Secundário de Ação de Conta (Prévia de Detalhe):**\n   - Bloco claramente contextualizado como *Prévia de detalhe de conta*, demonstrando o fluxo atômico de *\"Revogar sessões deste usuário\"* com a explicação exata: *\"Interrompe as sessões existentes. A conta permanece ativa se não for desativada.\"*\n\n5. **Aderência aos Limites do Escopo M1:**\n   - Isento de qualquer menção a SSO, MFA/2FA, e-mails de convite, faturamento ou múltiplos escritórios/tenants, preservando a fidelidade da arquitetura monolitica Django local."
+  },
+  {
+    "suggestion": "Criar a tela de 'Casos autorizados' (/casos/) seguindo a mesma fundação M1"
+  },
+  {
+    "suggestion": "Adicionar o modal de formulário para 'Adicionar usuário'"
+  },
+  {
+    "suggestion": "Verificar ajustes de contraste ou acessibilidade na tabela"
+  }
+]

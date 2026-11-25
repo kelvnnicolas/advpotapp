@@ -1,0 +1,88 @@
+{
+  "projectId": "10692539038282260634",
+  "title": "Advpotapp — Delfino | Protótipos",
+  "url": "https://stitch.withgoogle.com/projects/10692539038282260634",
+  "date": "2026-11-24",
+  "stage": "protótipos de revisão; sem aceite operacional",
+  "method": "HTML estático com CSS inline e screenshots reais da aplicação M1, capturados em banco de testes temporário; scripts e CSRF removidos, submit desabilitado no protótipo",
+  "designSystem": {
+    "legacyId": "assets/d4b4d8b972a448b1a9cee4c47c1de2f4",
+    "legacyName": "Ateliê Jurídico",
+    "legacyPreserved": true,
+    "m1Tokens": ".stitch/DESIGN.md"
+  },
+  "screens": [
+    {
+      "deviceType": "DESKTOP",
+      "height": "2048",
+      "htmlCode": {
+        "downloadUrl": "https://stitch.googleapis.com/v1/projects/10692539038282260634/files/8227842091720075345:download",
+        "mimeType": "text/html",
+        "name": "projects/10692539038282260634/files/8227842091720075345"
+      },
+      "name": "projects/10692539038282260634/screens/6b53821c327a4a5f8b81f593affc2a80",
+      "screenType": "DESIGN",
+      "screenshot": {
+        "downloadUrl": "https://stitch.googleapis.com/v1/projects/10692539038282260634/files/8227842091720076515:download",
+        "mimeType": "image/png",
+        "name": "projects/10692539038282260634/files/8227842091720076515"
+      },
+      "title": "Advpotapp M1 — Acesso interno — /entrar/",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2504",
+      "htmlCode": {
+        "downloadUrl": "https://stitch.googleapis.com/v1/projects/10692539038282260634/files/10356194252221687125:download",
+        "mimeType": "text/html",
+        "name": "projects/10692539038282260634/files/10356194252221687125"
+      },
+      "name": "projects/10692539038282260634/screens/90bcce5606594433aacdac0fba5861d9",
+      "screenType": "DESIGN",
+      "screenshot": {
+        "downloadUrl": "https://stitch.googleapis.com/v1/projects/10692539038282260634/files/10356194252221689383:download",
+        "mimeType": "image/png",
+        "name": "projects/10692539038282260634/files/10356194252221689383"
+      },
+      "title": "Advpotapp M1 — Meu trabalho — /meu-trabalho/",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2432",
+      "htmlCode": {
+        "downloadUrl": "https://stitch.googleapis.com/v1/projects/10692539038282260634/files/17151429395331242042:download",
+        "mimeType": "text/html",
+        "name": "projects/10692539038282260634/files/17151429395331242042"
+      },
+      "name": "projects/10692539038282260634/screens/e94dfebcd2c0441bb9693781556c431e",
+      "screenType": "DESIGN",
+      "screenshot": {
+        "downloadUrl": "https://stitch.googleapis.com/v1/projects/10692539038282260634/files/17151429395331240284:download",
+        "mimeType": "image/png",
+        "name": "projects/10692539038282260634/files/17151429395331240284"
+      },
+      "title": "Advpotapp M1 — Usuários e acessos — /administracao/usuarios/",
+      "width": "2560"
+    }
+  ],
+  "previousScreens": [
+    {
+      "id": "0befe69506c947a5b0ff5479726c386e",
+      "label": "Painel Geral - Escritório Vasconcelos Advocacia"
+    },
+    {
+      "id": "fb51b57d59ae42568061b45c7b7e3bc7",
+      "label": "Painel Geral - Delfino Advocacia (Demonstração)"
+    }
+  ],
+  "localImplementation": "src",
+  "localScreenshots": ".stitch/previews",
+  "designAssets": ".stitch/designs",
+  "reviewNotes": [
+    "Revisão visual substituiu os textos exagerados da geração inicial por telas reais do Django.",
+    "Controles do protótipo são referências estáticas; não autenticam, salvam ou enviam comunicações.",
+    "Dados fictícios do banco temporário, sem Aurora, dados reais ou tokens."
+  ]
+}

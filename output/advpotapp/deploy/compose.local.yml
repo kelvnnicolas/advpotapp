@@ -1,0 +1,20 @@
+services:
+  db:
+    # PostgreSQL 17.12 verified locally; immutable image used in M1 checks.
+    image: postgres:17@sha256:87c8b42f423b45d5247e6aa8fdb2e7762fec164c68a50fe3eb07e7bfcaf4dbcf
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-advpot}
+      POSTGRES_USER: ${POSTGRES_USER:-advpot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Execute scripts/init_local.py primeiro}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - advpot_m1_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+volumes:
+  advpot_m1_data:

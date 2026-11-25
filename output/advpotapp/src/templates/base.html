@@ -1,0 +1,38 @@
+{% load static %}<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}Advpot{% endblock %} · Gestão jurídica</title>
+  <link rel="stylesheet" href="{% static 'app.css' %}">
+  <meta name="htmx-config" content='{"allowEval":false,"allowScriptTags":false,"selfRequestsOnly":true,"historyCacheSize":0}'>
+  <script src="{% static 'vendor/htmx-2.0.8.min.js' %}" defer></script>
+</head>
+<body hx-history="false">
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+{% if user.is_authenticated %}
+<div class="shell">
+  <aside class="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="{% url 'dashboard' %}"><span class="brand-mark" aria-hidden="true">a.</span>advpot<span class="brand-dot">●</span></a>
+    <div class="office"><span class="eyebrow">ESPAÇO DE TRABALHO</span><strong>Delfino</strong><small>Gestão jurídica</small></div>
+    <nav>
+      <span class="nav-label">OPERAÇÃO</span>
+      <a {% if request.resolver_match.url_name == 'dashboard' %}aria-current="page"{% endif %} href="{% url 'dashboard' %}"><span aria-hidden="true">◫</span> Meu trabalho</a>
+      <a {% if 'case' in request.resolver_match.url_name %}aria-current="page"{% endif %} href="{% url 'cases' %}"><span aria-hidden="true">▤</span> Casos autorizados</a>
+      {% if user.can_manage_identity %}<span class="nav-label">ADMINISTRAÇÃO</span><a {% if request.resolver_match.url_name == 'users' %}aria-current="page"{% endif %} href="{% url 'users' %}"><span aria-hidden="true">♧</span> Usuários e acessos</a>{% endif %}
+      {% if user.can_read_audit %}<span class="nav-label">GOVERNANÇA</span><a {% if request.resolver_match.url_name == 'history' %}aria-current="page"{% endif %} href="{% url 'history' %}"><span aria-hidden="true">◷</span> Histórico de ações</a>{% endif %}
+    </nav>
+    <div class="sidebar-bottom"><span class="environment">Ambiente de revisão · M1</span><p>Gestão conectada.<br>Tecnologia sob medida.</p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span class="breadcrumb">Delfino <span aria-hidden="true">/</span> {% block breadcrumb %}Meu trabalho{% endblock %}</span><div class="account"><div class="avatar" aria-hidden="true">{{ user.username|first|upper }}</div><div><strong>{{ user.get_full_name|default:user.username }}</strong><small>{{ user.get_role_display }}</small></div><form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="text-button" type="submit">Sair</button></form></div></header>
+    <main id="conteudo" class="main" tabindex="-1">
+      {% if messages %}<div aria-live="polite">{% for message in messages %}<p class="notice">{{ message }}</p>{% endfor %}</div>{% endif %}
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">Advpot · Uso interno <span>Fundação em revisão · Sem integrações externas</span></footer>
+  </div>
+</div>
+{% else %}
+<main id="conteudo" tabindex="-1">{% block public_content %}{% endblock %}</main>
+{% endif %}
+</body></html>

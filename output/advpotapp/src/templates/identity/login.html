@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Entrar{% endblock %}
+{% block public_content %}
+<div class="login-layout">
+  <section class="login-story" aria-label="Advpot para Delfino">
+    <a class="brand" href="{% url 'login' %}"><span class="brand-mark" aria-hidden="true">a.</span>advpot<span class="brand-dot">●</span></a>
+    <div class="login-message"><span class="eyebrow">GESTÃO JURÍDICA CONECTADA</span><h1>Contexto para decidir.<br>Clareza para agir.</h1><p>Um espaço para organizar a rotina do escritório e acompanhar cada responsabilidade.</p><div class="story-rule"></div><span class="eyebrow">DELFINO</span><p class="institution">Delfino · Ambiente interno</p></div>
+    <small> Tecnologia sob medida. Liberdade para evoluir.</small>
+  </section>
+  <section class="login-form-area">
+    <div class="login-form"><span class="tag">ACESSO INTERNO</span><h2>Bem-vindo ao Advpot</h2><p class="muted">Entre com o acesso fornecido pelo administrador.</p>
+      <form method="post" action="{% url 'login' %}">{% csrf_token %}
+        {% if form.non_field_errors %}<div class="error-summary" role="alert">{{ form.non_field_errors }}</div>{% endif %}
+        {% for field in form %}<div class="field"><label for="{{ field.id_for_label }}">{{ field.label }}</label>{{ field }}{% if field.errors %}<div class="field-error" role="alert">{{ field.errors }}</div>{% endif %}</div>{% endfor %}
+        <input type="hidden" name="next" value="{{ next }}"><button class="button full" type="submit">Entrar no meu espaço <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="help">Precisa recuperar o acesso?<br>Procure o administrador do escritório.</p><div class="login-note"><span class="status-dot" aria-hidden="true"></span>Fundação M1 · Ambiente de revisão</div>
+    </div>
+  </section>
+</div>
+{% endblock %}

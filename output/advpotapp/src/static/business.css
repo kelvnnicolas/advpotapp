@@ -1,0 +1,107 @@
+.business-view,.business-public {--business-soft:#eef2e9;--business-gold:#a57a35;overflow-wrap:anywhere}
+.business-view [hidden],.business-public [hidden] {display:none!important}
+.business-preview {display:flex;align-items:baseline;gap:18px;padding:14px 18px;border:1px solid #e0cfaa;border-left:3px solid var(--business-gold);border-radius:6px;background:#fbf7ee;margin-bottom:30px;font-size:12px;color:#6c532a}
+.business-preview strong {flex-shrink:0;font-size:12px}
+.business-preview p {margin:0;line-height:1.6}
+.business-heading {display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:26px}
+.business-heading h1 {margin-bottom:0;font-size:34px;letter-spacing:-1px}
+.business-heading .eyebrow {font-size:9px;color:var(--muted);margin-bottom:12px}
+.scenario-picker {max-width:340px;font-size:11px;flex-shrink:0}
+.scenario-picker label {font-weight:400;color:var(--muted);font-size:11px}
+.scenario-picker>div {display:flex;gap:8px;align-items:center}
+.scenario-picker select {font-size:12px;padding:10px;min-width:180px}
+.scenario-picker .button {padding:10px 12px;min-height:44px;font-size:11px;flex-shrink:0;white-space:nowrap}
+.business-hero {display:grid;grid-template-columns:1.4fr 1fr;gap:40px;background:var(--forest);color:white;border-radius:12px;padding:34px;margin-bottom:24px}
+.business-hero h2 {font-size:31px;font-weight:400;line-height:1.25;letter-spacing:-.8px;margin-bottom:18px}
+.business-hero .eyebrow {font-size:9px;color:#c5d7b9;margin-bottom:20px}
+.business-hero p {font-size:13px;line-height:1.8;color:#d0ded4;max-width:510px;margin-bottom:24px}
+.hero-business-status {border-left:1px solid #4c6b5f;padding:10px 0 10px 30px;align-self:center}
+.hero-business-status p {margin:20px 0 24px}
+.hero-business-status a {color:#e0efcd;font-size:12px}
+.business-status {display:inline-flex;padding:5px 9px;border-radius:4px;font-size:11px;font-weight:600;line-height:1.5;border:1px solid transparent}
+.business-status.positive {background:#e8f1df;color:#285329;border-color:#d5e5c7}
+.business-status.warning {background:#fcf1da;color:#76531e;border-color:#e8d6af}
+.business-status.neutral {background:#edf0ed;color:#57655c;border-color:#dde4dc}
+.business-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:32px;background:white;border:1px solid var(--border);border-radius:10px}
+.business-stats article {padding:22px 26px}
+.business-stats article+article {border-left:1px solid var(--border)}
+.business-stats article>span {font-size:12px;color:var(--muted)}
+.business-stats strong {display:block;font-size:36px;font-weight:400;letter-spacing:-1px;margin:5px 0}
+.business-stats small {font-size:11px}
+.business-section-heading {display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:18px}
+.business-section-heading h2 {margin:0;font-size:19px}
+.business-section-heading>span {font-size:11px}
+.business-cards {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:24px}
+.business-card {display:block;border:1px solid var(--border);border-radius:10px;background:white;padding:24px;min-width:0}
+a.business-card:hover {text-decoration:none;border-color:#8daa8e}
+.business-card-number {display:block;font-size:9px;letter-spacing:1.3px;color:var(--muted);font-weight:600;margin-bottom:28px}
+.business-card h3 {font-size:16px;line-height:1.5}
+.business-card h2 {font-size:22px}
+.business-card p {font-size:12px;color:var(--muted);line-height:1.8;margin:16px 0 0}
+.business-card details {font-size:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--border)}
+.business-card summary {cursor:pointer;color:var(--forest);font-weight:600;min-height:30px}
+.business-card summary:focus-visible {outline:3px solid #886127;outline-offset:3px}
+.business-inline-note {padding:22px 0;border-top:1px solid var(--border);font-size:12px;margin-top:20px}
+.business-inline-note p {color:var(--muted);margin:7px 0 0;line-height:1.8;max-width:840px}
+.business-intro {font-size:14px;color:var(--muted);line-height:1.8;max-width:830px;margin-bottom:28px}
+.business-two-columns {display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:22px;align-items:start}
+.business-panel {padding:26px;background:white;border:1px solid var(--border);border-radius:10px;min-width:0}
+.business-panel h2 {font-size:21px;margin-bottom:18px}
+.business-panel h3 {font-size:15px}
+.business-panel .eyebrow {font-size:9px;color:var(--muted)}
+.business-panel p {line-height:1.75}
+.business-small {font-size:12px}
+.business-counter {font-size:11px;color:var(--muted);white-space:nowrap}
+.business-panel fieldset {border:0;padding:0;margin:0;min-width:0}
+.business-panel fieldset label:not(:first-of-type) {margin-top:20px}
+.business-panel fieldset .button {margin-top:24px}
+.business-panel fieldset input,.business-panel fieldset select {font-size:13px}
+.business-panel fieldset:disabled {opacity:.7}
+.business-table-wrap {width:100%;overflow-x:auto;margin:20px 0 16px}
+.business-table {min-width:570px;table-layout:fixed}
+.business-table th,.business-table td {padding:15px 10px;vertical-align:top;overflow-wrap:anywhere}
+.business-table th:first-child {width:35%}
+.business-table th:last-child {width:22%}
+.business-table th {font-size:10px;background:#f7f9f3}
+.business-table td {font-size:11px}
+.business-table td strong {display:block;font-size:12px;font-weight:600}
+.business-table td small {font-size:10px;line-height:1.8}
+.business-link-button {border:0;padding:0;min-height:40px;background:none;color:var(--forest);text-align:left;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.business-empty {border:1px dashed var(--border);background:#f7f9f3;padding:22px;text-align:center;font-size:12px;color:var(--muted)}
+.business-feedback {font-size:12px;color:#285329;margin:14px 0 0;line-height:1.7}
+.business-feedback.is-error {color:var(--danger)}
+.business-separator {border-top:1px solid var(--border);margin:25px 0}
+.business-flow {list-style:none;padding:0;margin:0 0 28px}
+.business-flow li {display:flex;gap:20px;padding:23px 0;position:relative;border-bottom:1px solid #edf0e8}
+.flow-index {display:grid;place-items:center;align-self:flex-start;width:38px;height:38px;flex-shrink:0;border:1px solid #d9e3d3;background:var(--business-soft);border-radius:50%;font-size:12px;color:var(--forest)}
+.business-stage-department {font-size:9px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}
+.business-flow h3 {margin:5px 0 7px;font-size:16px}
+.business-flow p {color:var(--muted);font-size:12px;margin:0}
+.business-price {font-size:33px;font-weight:400;letter-spacing:-1px;margin-bottom:5px}
+.business-plan {border-top:3px solid var(--forest)}
+.business-checklist {list-style:none;padding:0;margin:26px 0;font-size:13px}
+.business-checklist li {border-top:1px solid var(--border);padding:13px 0}
+.business-checklist li:last-child {border-bottom:1px solid var(--border)}
+.business-definition {grid-template-columns:140px minmax(0,1fr);gap:15px;font-size:12px;margin:20px 0}
+.business-definition dd {min-width:0}
+.business-checkbox {display:flex;align-items:flex-start;gap:10px;font-weight:400;line-height:1.7}
+.business-checkbox input {margin:3px 0 0;flex-shrink:0;width:17px;height:17px}
+.business-summary {border-top:1px solid var(--border);background:#f7f9f3;margin:24px -12px 0;padding:22px 12px;border-radius:6px}
+.business-summary:focus {outline:2px solid #886127;outline-offset:4px}
+.business-public {max-width:1160px;margin:auto;padding:30px 34px 0}
+.business-public-header {display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:36px}
+.business-public-header>a:last-child {font-size:12px}
+.business-wordmark {font-size:28px;font-weight:700;letter-spacing:-1.4px;display:flex;align-items:baseline;gap:12px}
+.business-wordmark span {font-weight:400;font-size:12px;letter-spacing:0}
+.contract-heading {padding:12px 0 26px;max-width:700px}
+.contract-heading .eyebrow {font-size:10px;color:var(--muted)}
+.contract-heading h1 {font-size:42px;font-weight:500;line-height:1.15;letter-spacing:-1.5px;margin-bottom:22px}
+.contract-heading>p {font-size:14px;color:var(--muted);line-height:1.8;max-width:600px}
+.business-public-footer {margin-top:48px;padding:22px 0;border-top:1px solid var(--border);font-size:11px;color:var(--muted)}
+.business-return {max-width:720px;margin:40px auto 50px;text-align:center;padding:38px 30px;border:1px solid var(--border);border-radius:12px;background:white}
+.business-pending-mark {display:grid;place-items:center;width:60px;height:60px;margin:0 auto 28px;background:#f5efe0;color:#8f6a2d;border-radius:50%;font-size:29px}
+.business-return .eyebrow {font-size:9px;color:var(--muted)}
+.business-return>p {font-size:14px;line-height:1.8;color:var(--muted)}
+.business-return-actions {display:flex;justify-content:center;align-items:center;gap:22px;font-size:12px;margin-top:30px}
+@media(max-width:1250px) {.business-two-columns {grid-template-columns:1fr}.business-heading {align-items:start;flex-direction:column;gap:20px}.scenario-picker {max-width:none}.business-hero {gap:25px;padding:28px}.business-cards {grid-template-columns:1fr}.business-card-number {margin-bottom:18px}}
+@media(max-width:720px) {.business-preview {display:block;margin-bottom:26px;padding:12px 14px}.business-preview p {margin-top:6px}.business-heading h1 {font-size:28px}.business-hero {grid-template-columns:1fr;padding:25px;gap:26px}.business-hero h2 {font-size:27px}.hero-business-status {border-left:0;border-top:1px solid #4c6b5f;padding:25px 0 0}.business-stats {grid-template-columns:1fr}.business-stats article {padding:18px 22px}.business-stats article+article {border-left:0;border-top:1px solid var(--border)}.business-stats strong {font-size:28px}.business-section-heading {align-items:flex-start;flex-direction:column;gap:8px}.business-section-heading>span.muted {display:none}.business-panel {padding:22px 18px}.business-card {padding:22px}.business-definition {grid-template-columns:1fr;gap:6px}.business-definition dd {margin-bottom:10px}.business-public {padding:22px 20px 0}.business-public-header {align-items:flex-start;flex-direction:column;gap:16px}.contract-heading h1 {font-size:34px}.business-return {padding:28px 20px;margin-top:28px}.business-return h1 {font-size:28px}.business-return-actions {flex-direction:column;gap:18px}.scenario-picker>div {flex-wrap:wrap}.scenario-picker select {min-width:0}.business-flow li {gap:14px}.business-price {font-size:29px}}

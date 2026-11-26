@@ -14,7 +14,7 @@
         {% for field in form %}<div class="field"><label for="{{ field.id_for_label }}">{{ field.label }}</label>{{ field }}{% if field.errors %}<div class="field-error" role="alert">{{ field.errors }}</div>{% endif %}</div>{% endfor %}
         <input type="hidden" name="next" value="{{ next }}"><button class="button full" type="submit">Entrar no meu espaço <span aria-hidden="true">→</span></button>
       </form>
-      <p class="help">Precisa recuperar o acesso?<br>Procure o administrador do escritório.</p><div class="login-note"><span class="status-dot" aria-hidden="true"></span>Fundação M1 · Ambiente de revisão</div>
+      <p class="help">Precisa recuperar o acesso?<br>Procure o administrador do escritório.</p>{% if business_preview_enabled %}<p class="help"><a href="{% url 'business:contract' %}">Conhecer Business · prévia sem cobrança →</a></p>{% endif %}<div class="login-note"><span class="status-dot" aria-hidden="true"></span>Fundação M1 · Ambiente de revisão</div>
     </div>
   </section>
 </div>

@@ -30,27 +30,37 @@
 
 Arquivos: docs/data/BUSINESS_DOMAIN_MODEL.md; src/advpot/business_frontend/{__init__,contracts,views,urls,context_processors}.py; config/{settings,urls}.py; tests/test_business_frontend.py.
 Interfaces: get_preview(scenario) com schema_version e campos fixos sem preço/vagas; rotas business:index/team/flows/subscription/integrations/settings e business:contract/return, GET/HEAD.
-- [ ] Testes RED de login, produção, métodos, cenário inválido, contrato sem preço fictício e ausência de efeitos em modelos reais.
-- [ ] Registrar proposta de domínio/alternativas/índices e implementar entrega local de HTML sem modelos.
-- [ ] Testes pertinentes GREEN e commit do checkpoint.
+- [x] Testes RED de login, produção, métodos, cenário inválido, contrato sem preço fictício e ausência de efeitos em modelos reais.
+- [x] Registrar proposta de domínio/alternativas/índices e implementar entrega local de HTML sem modelos.
+- [x] Testes pertinentes GREEN e commit do checkpoint.
 
 ## Task 2 — CP2: interface/interações
 
 Arquivos: templates/business/*; static/business.{css,js}; templates/base.html e identity/login.html; tests/test_business_browser.py.
 Interfaces: páginas por rota, formulário data-preview-form com prevenção de submissão; aviso aria-live; atributos/IDs estáveis para testes. Componentes visuais consistentes com .stitch/DESIGN.md.
-- [ ] Testes RED de jornada Chrome e responsividade, convite duplicado, suspensão, fluxo, resumo da contratação e ausência de chamadas/escritas.
-- [ ] Implementar telas e estados/interações locais com DOM seguro, labels, foco e estados vazios.
-- [ ] Chrome desktop/celular, regressões M1/M2 e commit.
+- [x] Testes RED de jornada Chrome e responsividade, convite duplicado, suspensão, fluxo, resumo da contratação e ausência de chamadas/escritas.
+- [x] Implementar telas e estados/interações locais com DOM seguro, labels, foco e estados vazios.
+- [x] Chrome desktop/celular, regressões M1/M2 e commit.
 
 ## Task 3 — CP3: validação e entrega
 
 Arquivos: docs/testing/BUSINESS_FRONTEND_VERIFICATION.md, README, PROJECT_STATUS e escopo comercial.
-- [ ] Suíte PostgreSQL com navegador, check e migrations --check.
-- [ ] Revisão independente do conjunto, uma passagem de correções relevantes com RED→GREEN.
-- [ ] Servidor local atualizado, inspeção das telas e capturas fictícias; docs de limites/resultado e commit.
+- [x] Suíte PostgreSQL com navegador, check e migrations --check.
+- [x] Revisão independente do conjunto, uma passagem de correções relevantes com RED→GREEN.
+- [x] Servidor local atualizado, inspeção das telas e capturas fictícias; docs de limites/resultado e commit.
 
 ## Ledger
 
 - BASE: fbab150. Novo branch codex/business-frontend, árvore limpa antes do início.
 - Ruling: manter o checkout existente e isolar em branch, sem worktree adicional — preserva o servidor/venv e URL usados pelo usuário — custo: não permite dois desenvolvimentos simultâneos no mesmo diretório.
 - Ruling: primeiro lote é frontend de prévia local e contrato de domínio; backend/banco seguem checkpoint posterior — respeita ordem explícita e decisões comerciais pendentes — custo: nenhuma ação Business é persistida ou cobrada nesta entrega.
+
+
+- CP1: testes RED observados sem rotas/módulo; 7 testes GREEN após implementação. Contrato e modelagem candidatos registrados. Commit 8a6773e.
+- CP2: jornada Chrome RED com campos sem interações; JS/CSS implementados, desktop/celular e caminho sem JavaScript verificados. Ajustados seletores de noscript/fieldset e expectativa de sessionStorage para metadado HTMX não conter dados de formulário. Commit d75236c; suíte 73/73 antes da revisão.
+- CP3: revisão independente /root/review_business_frontend, somente leitura, pacote git diff -U10 fbab150..d75236c. Retorno de contratação corrigido; suíte final 74/74 PostgreSQL com seis testes de navegador e check/migrations --check aprovados; sem modelos ou migrações novos.
+- Final: fixed contexto do retorno da contratação — test_checkout_return_links_preserve_the_origin_scenario RED→GREEN, jornada de ida/volta expired em Chrome e suíte 74/74. Asserção focal adicional inspeciona somente o painel de retorno, evitando correspondência com navegação lateral.
+- Final: minor (deferred): sem JavaScript a busca e os botões de suspensão visual não funcionam mas ainda aparecem habilitados. Formulários de edição permanecem desabilitados; nenhuma gravação ou envio ocorre. Refinamento da experiência sem JS permanece pendente.
+- Final: Ruling: aceite visual do ambiente pelo usuário não foi emitido pelo revisor — executor inspecionou desktop/celular e páginas locais, mas mantém estado de revisão — custo: homologação do usuário ainda é necessária antes de declarar disponibilidade operacional.
+- Final: Ruling: revisor não executou PostgreSQL — evidência de 74 testes e check/migrations vem da execução real deste agente — custo: a revisão é estática e não oferece uma segunda execução independente da suíte.
+- Operação local: servidor atualizado e /contratar/ HTTP 200. Nenhum dado Business persistido, provedor escolhido, cobrança ou conexão Google.

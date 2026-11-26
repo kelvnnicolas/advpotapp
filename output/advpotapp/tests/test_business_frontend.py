@@ -78,3 +78,11 @@ class BusinessFrontendTests(TestCase):
             for form in forms:
                 self.assertNotIn('type="submit"', form)
                 self.assertIn('<fieldset disabled', form)
+
+    def test_checkout_return_links_preserve_the_origin_scenario(self):
+        self.client.force_login(self.account)
+        for scenario in ['active', 'pending', 'expired', 'cancelled']:
+            response = self.client.get('/contratar/retorno/', {'scenario': scenario})
+            panel = re.search(r'<section class="business-return">([\s\S]*?)</section>', response.content.decode()).group(1)
+            self.assertIn(f'href="/business/assinatura/?scenario={scenario}"', panel)
+            self.assertIn(f'href="/contratar/?scenario={scenario}"', panel)

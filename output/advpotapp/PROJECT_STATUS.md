@@ -1,5 +1,13 @@
 # Status — Advpotapp
 
+## Implementação Business — frontend primeiro — 26/11/2026
+
+Usuário autorizou iniciar estrutura e implementação por checkpoints, frontend antes de backend/banco. Branch local codex/business-frontend. CP1: oito rotas e contrato de apresentação, modelo proposto Business/Membership/assinatura/fluxo/integração, sem novas tabelas. CP2: navegação e interações demonstrativas de equipe, fluxos, configuração, assinatura, integração desconectada e contratação sem pagamento. Mesma stack/tokens; nenhuma dependência nova.
+
+CP3: 74 testes PostgreSQL aprovados, incluindo seis testes de navegador, migrações/check sem pendências. Revisão independente concluída; cenário de retorno corrigido com regressão, uma pendência menor sem JavaScript registrada. [Evidências e limites](docs/testing/BUSINESS_FRONTEND_VERIFICATION.md). Prévia somente local com dados fictícios; não gerencia escritórios, cobranças ou colaboradores reais. Não altera a base persistente M1/M2-A. Preço, vagas, frequência, provedor e isolamento físico ainda não escolhidos.
+
+Backend/banco Business permanecem checkpoint posterior, com contrato em [BUSINESS_DOMAIN_MODEL.md](docs/data/BUSINESS_DOMAIN_MODEL.md). Nenhuma cobrança, OAuth, envio, nova infraestrutura ou disponibilização comercial nesta etapa.
+
 ## Avaliação SaaS Business e checkout — 26/11/2026
 
 Usuário propôs conta Business com colaboradores/fluxos, checkout e entrada vinculada ao pagamento, sem teste gratuito. Escolha explícita na avaliação: priorizar assinatura por escritório com colaboradores incluídos. Preço, frequência, quantidade de vagas, provedor, isolamento físico/lógico e política de atraso permanecem pendentes.

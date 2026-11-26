@@ -14,6 +14,8 @@ Direção confirmada em 26/11/2026: produto replicável para outros advogados/es
 
 ## Decisões e limites
 
+**Checkpoint frontend Business em revisão local:** [visão do escritório](http://127.0.0.1:8765/business/) (login existente) e [contratação demonstrativa](http://127.0.0.1:8765/contratar/). Oito rotas e interações locais; sem cobrança, gravação Business ou conexão Google. [Verificação](docs/testing/BUSINESS_FRONTEND_VERIFICATION.md), [rotas/modelagem proposta](docs/data/BUSINESS_DOMAIN_MODEL.md). Backend/banco seguem o próximo checkpoint.
+
 Para revisão com a conta `teste`: [base fictícia local v1](docs/data/LOCAL_DEMO_V1.md), com contatos, demandas e casos demonstrativos. [Preparação para Google Workspace](docs/integrations/GOOGLE_WORKSPACE_READINESS.md): arquitetura compatível com evolução; Drive/Calendar ainda sem adaptadores, OAuth ou sincronização operacional.
 
 **M2-A aprovado e implementado para revisão local:** clientes/contatos, demandas, lista/quadro comercial e passagem Secretaria → Comercial com aceite, concessões por registro, histórico e recuperação de responsabilidade. [Evidências do recorte](docs/testing/M2A_VERIFICATION.md). Contratação e financeiro permanecem nos próximos lotes; sem disponibilidade operacional declarada.

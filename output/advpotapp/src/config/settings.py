@@ -28,6 +28,7 @@ TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'django.contrib.auth.context_processors.auth',
         'django.contrib.messages.context_processors.messages',
         'advpot.intake.context_processors.navigation',
+        'advpot.business_frontend.context_processors.preview_navigation',
     ]}}]
 WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {'default': {

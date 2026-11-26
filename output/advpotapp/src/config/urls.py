@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import include, path
 from django.views.generic import RedirectView
 from advpot.identity import views as identity
 from advpot.cases import views as cases
@@ -6,6 +6,7 @@ from advpot.audit.views import history
 from advpot.intake import views as intake
 
 urlpatterns = [
+    path('', include('advpot.business_frontend.urls')),
     path('clientes/', intake.contacts, name='contacts'),
     path('clientes/novo/', intake.contact_form, name='contact-create'),
     path('clientes/<uuid:pk>/', intake.contact_detail, name='contact-detail'),

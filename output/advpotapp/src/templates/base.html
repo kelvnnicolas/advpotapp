@@ -5,6 +5,7 @@
   <title>{% block title %}Advpot{% endblock %} · Gestão jurídica</title>
   <link rel="stylesheet" href="{% static 'app.css' %}">
   <link rel="stylesheet" href="{% static 'intake.css' %}">
+  {% block extra_head %}{% endblock %}
   <meta name="htmx-config" content='{"allowEval":false,"allowScriptTags":false,"selfRequestsOnly":true,"historyCacheSize":0}'>
   <script src="{% static 'vendor/htmx-2.0.8.min.js' %}" defer></script>
 </head>
@@ -14,8 +15,9 @@
 <div class="shell">
   <aside class="sidebar" aria-label="Navegação principal">
     <a class="brand" href="{% url 'dashboard' %}"><span class="brand-mark" aria-hidden="true">a.</span>advpot<span class="brand-dot">●</span></a>
-    <div class="office"><span class="eyebrow">ESPAÇO DE TRABALHO</span><strong>Delfino</strong><small>Gestão jurídica</small></div>
+    <div class="office"><span class="eyebrow">ESPAÇO DE TRABALHO</span><strong>{% block office_name %}Delfino{% endblock %}</strong><small>{% block office_description %}Gestão jurídica{% endblock %}</small></div>
     <nav>
+      {% block primary_navigation %}
       <span class="nav-label">OPERAÇÃO</span>
       <a {% if request.resolver_match.url_name == 'dashboard' %}aria-current="page"{% endif %} href="{% url 'dashboard' %}"><span aria-hidden="true">◫</span> Meu trabalho</a>
       <a {% if 'case' in request.resolver_match.url_name %}aria-current="page"{% endif %} href="{% url 'cases' %}"><span aria-hidden="true">▤</span> Casos autorizados</a>
@@ -24,8 +26,10 @@
       {% if nav_recovery %}<a href="{% url 'recovery' %}">Recuperar responsabilidade</a>{% endif %}
       {% if user.can_manage_identity %}<span class="nav-label">ADMINISTRAÇÃO</span><a {% if request.resolver_match.url_name == 'users' %}aria-current="page"{% endif %} href="{% url 'users' %}"><span aria-hidden="true">♧</span> Usuários e acessos</a>{% endif %}
       {% if user.can_read_audit %}<span class="nav-label">GOVERNANÇA</span><a {% if request.resolver_match.url_name == 'history' %}aria-current="page"{% endif %} href="{% url 'history' %}"><span aria-hidden="true">◷</span> Histórico de ações</a>{% endif %}
+      {% if business_preview_enabled %}<span class="nav-label">EM CONSTRUÇÃO</span><a href="{% url 'business:index' %}">Business · prévia</a>{% endif %}
+      {% endblock %}
     </nav>
-    <div class="sidebar-bottom"><span class="environment">Ambiente de revisão · M2-A</span><p>Gestão conectada.<br>Tecnologia sob medida.</p></div>
+    <div class="sidebar-bottom"><span class="environment">{% block environment_name %}Ambiente de revisão · M2-A{% endblock %}</span><p>Gestão conectada.<br>Tecnologia sob medida.</p></div>
   </aside>
   <div class="workspace">
     <header class="topbar"><span class="breadcrumb">Delfino <span aria-hidden="true">/</span> {% block breadcrumb %}Meu trabalho{% endblock %}</span><div class="account"><div class="avatar" aria-hidden="true">{{ user.username|first|upper }}</div><div><strong>{{ user.get_full_name|default:user.username }}</strong><small>{{ user.get_role_display }}</small></div><form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="text-button" type="submit">Sair</button></form></div></header>

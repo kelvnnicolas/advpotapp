@@ -4,9 +4,10 @@ from advpot.audit.services import record
 from .models import User
 
 
-def require_access_admin(actor):
+def require_access_admin(actor, extra_ids=()):
     # Reload on commands: stale forms cannot retain revoked permissions.
-    actor = User.objects.select_for_update().get(pk=actor.pk)
+    accounts = {user.pk: user for user in User.objects.filter(pk__in={actor.pk, *extra_ids}).order_by('pk').select_for_update()}
+    actor = accounts[actor.pk]
     if not actor.can_manage_identity:
         raise PermissionDenied
     return actor
@@ -30,7 +31,7 @@ def create_internal_user(*, actor, form):
 
 @transaction.atomic
 def update_internal_user(*, actor, user_id, changes):
-    actor = require_access_admin(actor)
+    actor = require_access_admin(actor, [user_id])
     account = User.objects.select_for_update().get(pk=user_id)
     if account.pk == actor.pk and (not changes['is_active'] or changes['role'] != User.Role.ACCESS_ADMIN):
         raise ValidationError('Você não pode desativar nem remover seu próprio perfil de administração.')
@@ -40,6 +41,9 @@ def update_internal_user(*, actor, user_id, changes):
     if old_active != account.is_active or old_role != account.role:
         account.session_version += 1
     account.save(update_fields=['first_name', 'last_name', 'role', 'is_active', 'session_version'])
+    if old_active and not account.is_active:
+        from advpot.intake.workflow import recover_if_unable
+        recover_if_unable(actor=actor, user=account)
     if old_active != account.is_active:
         action = 'identity.enable' if account.is_active else 'identity.disable'
         record(actor=actor, action=action, target=account.pk)
@@ -51,7 +55,7 @@ def update_internal_user(*, actor, user_id, changes):
 
 @transaction.atomic
 def revoke_sessions(*, actor, user_id):
-    actor = require_access_admin(actor)
+    actor = require_access_admin(actor, [user_id])
     account = User.objects.select_for_update().get(pk=user_id)
     account.session_version += 1
     account.save(update_fields=['session_version'])

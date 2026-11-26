@@ -10,6 +10,10 @@ Na reunião, partir do problema real: onde o atendimento perde continuidade, com
 
 Evitar vender “todos os recursos de outro sistema por menos”. Não prometer indicadores de ganho sem linha de base e medição.
 
+## Modalidades de distribuição — direção de 26/11/2026
+
+O produto deverá atender outros profissionais e escritórios. As duas ofertas a estruturar são instalação licenciada independente e SaaS gerenciado; nenhuma tem preço ou prontidão comercial presumidos. Definir implantação, atualizações, suporte, infraestrutura, direito de uso/código e saída por modalidade. Licenças Workspace são item separado salvo composição expressa. A proposta deve informar que SSO, Drive/Calendar e isolamento multiempresa ainda não estão implementados. [Desenho comercial e colaborativo](../product/WORKSPACE_AND_DISTRIBUTION.md).
+
 ## Oferta recomendada
 
 | Componente | O que se contrata | Como limitar |
@@ -21,6 +25,8 @@ Evitar vender “todos os recursos de outro sistema por menos”. Não prometer 
 | Terceiros | VPS, backup, domínio, Workspace e outros serviços | Fornecedor, titularidade, preço e reajuste identificados |
 
 Recomenda-se uma oferta inicial clara, em vez de planos que prometam personalização irrestrita. Se o diagnóstico for pago, informar se haverá abatimento na implantação; se gratuito, delimitar seu alcance.
+
+Prioridade selecionada pelo usuário: assinatura por escritório com colaboradores incluídos; um responsável Business contrata e administra a equipe. Sem período gratuito. Ainda definir vagas, periodicidade, valor, cancelamento e atraso. Não cobrar individualmente cada colaborador por inferência nem prometer usuários ilimitados. [Avaliação do modelo Business](../product/BUSINESS_SAAS_EVALUATION.md).
 
 ## Formação do investimento
 

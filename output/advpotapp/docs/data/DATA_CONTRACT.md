@@ -4,6 +4,8 @@ Contrato conceitual do Advpot, não contrato de importação da ADVBOX. Atualiza
 
 ## Entidades propostas
 
+Atualização de 26/11/2026: M2-A implementou Contact, ContactGrant, Demand, DemandGrant, CommercialHandoff, eventos de domínio, CommandReceipt e estrutura de setores/autoridade/recuperação. Demais entidades desta tabela continuam conceituais. A carga fictícia própria [local-demo v1](LOCAL_DEMO_V1.md) foi autorizada pelo usuário; essa autorização não abrange importação Aurora nem dados reais. [Preparação do Workspace](../integrations/GOOGLE_WORKSPACE_READINESS.md) distingue fundação existente de componentes ainda não implementados.
+
 | Entidade | Campos/conceitos centrais | Relações e restrições |
 | --- | --- | --- |
 | OfficeSettings | Nome institucional, fuso e parâmetros | Uma instalação; não é tenant SaaS |

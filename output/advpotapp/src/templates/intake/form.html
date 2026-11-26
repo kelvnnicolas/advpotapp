@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}{{ heading }}{% endblock %}
+{% block breadcrumb %}Atendimento / {{ heading }}{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">CONTINUIDADE DO ATENDIMENTO</span><h1>{{ heading }}</h1></div><a href="{{ back_url }}">Voltar</a></div>
+{% if contact_hint %}<p class="notice">Selecione um cadastro existente. Se necessário, <a href="{% url 'contact-create' %}">cadastre o contato</a> antes de abrir o atendimento.</p>{% endif %}
+{% if access_hint %}<p class="notice">Setor e concessão por registro são complementares. A gestão de acessos não concede leitura do conteúdo. Use a referência fornecida pelo responsável; revise cada ação separadamente.</p>{% endif %}
+{% if duplicates %}<section class="panel"><h2>Cadastros semelhantes sob seu acesso</h2><ul>{% for item in duplicates %}<li><a href="{% url 'contact-detail' item.pk %}">{{ item.name }}</a></li>{% endfor %}</ul><p>Confira se deve reutilizar um cadastro. Pessoas com nomes iguais podem permanecer separadas.</p></section>{% endif %}
+<section class="panel intake-form"><form method="post">{% csrf_token %}{{ form.as_p }}<button class="button" type="submit">Salvar</button></form></section>
+{% endblock %}

@@ -16,6 +16,10 @@ Projetar a interface base e navegação em português. Implementar lista, formul
 
 ## M2 — primeira fatia operacional completa
 
+Estado de construção em 25/11/2026: desenho e M2-A autorizados pelo usuário. Recorte A implementado e verificado localmente; M2-B/C/D continuam planejados. Evidências em docs/testing/M2A_VERIFICATION.md. O desenho completo ainda exige homologação.
+
+Atualização em 25/11/2026: [desenho derivado do fluxograma da cliente](../superpowers/specs/2026-11-25-m2-workflow-design.md), com [matriz de acesso](../product/M2_ACCESS_MATRIX.md) e [cenários de aceite](../testing/M2_ACCEPTANCE.md). A sequência de setores vem da fonte definida pelo usuário; regras adicionais permanecem propostas. Lotes internos M2-A (entrada/comercial), M2-B (contratação/liberação), M2-C (organização/distribuição) e M2-D (execução/encerramento). M2 só é uma jornada completa após os quatro lotes verificados.
+
 Entregar nesta ordem:
 
 1. Contato mínimo, busca e aviso de duplicidade.

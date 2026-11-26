@@ -50,6 +50,8 @@ Primeira instalação exclusiva da Delfino, conforme confirmação do usuário. 
 
 ## ADR-008 — execução autorizada da fundação M1
 
+Nota de evolução em 26/11/2026: a restrição de ADR-007 descreve a primeira implementação, não o limite comercial definitivo. O usuário confirmou produto para outros profissionais/escritórios por instalação licenciada ou SaaS. Identidade Google, isolamento e operação exigem novo plano; alternativas em [Workspace e distribuição](../product/WORKSPACE_AND_DISTRIBUTION.md). Direção aprovada, mecanismo técnico e implementação multiempresa ainda não escolhidos/autorizados por esta nota.
+
 Data: 24/11/2026. Responsável pela autorização: usuário do projeto, pelo pedido de iniciar após a recomendação explícita de M1. Implementação no workspace atual, preservando documentos e ativos anteriores; nenhum destino Desktop foi criado.
 
 Decisão: executar somente identidade, auditoria, envelope mínimo de caso e interface reutilizável. Alternativas consideradas no desenho: frontend/API separados e SaaS multiempresa; monólito escolhido pela operação interna e menor número de componentes. Python 3.13.18, Django 5.2.19 LTS, psycopg 3.3.9, HTMX 2.0.8 local; dependências transitivas em requirements.txt. Compatibilidade Python 3.13 verificada na [documentação oficial Django 5.2](https://docs.djangoproject.com/en/5.2/faq/install/). PostgreSQL local verificado como 17.12. O Python 3.15 global foi preservado.

@@ -4,10 +4,14 @@ Aplicação interna Delfino · Proposta de recorte, sem preço ou prazo aprovado
 
 ## Escopo por marco
 
-| Marco | Valor demonstrável | Limite comercial | Situação em 24/11/2026 |
+Checkpoint de 26/11/2026 autorizado e implementado: frontend Business local com oito rotas e interações demonstrativas; backend/banco, cobrança e Google seguem não implementados. [Verificação do frontend](../testing/BUSINESS_FRONTEND_VERIFICATION.md). Não vender a prévia como plano ativável, checkout conectado ou gestão multiempresa pronta.
+
+Direção comercial confirmada em 26/11/2026: Delfino é a primeira validação de produto replicável para outros advogados e escritórios. O usuário escolheu priorizar assinatura SaaS por escritório com colaboradores incluídos, sem trial; instalação licenciada continua alternativa. Plano/vagas, frequência, preço, provedor, condições e prazo permanecem pendentes. [Avaliação Business e checkout](../product/BUSINESS_SAAS_EVALUATION.md), [colaboração/isolamento](../product/WORKSPACE_AND_DISTRIBUTION.md). Nenhum lote existente comprova prontidão multiempresa, cobrança ou integração Google.
+
+| Marco | Valor demonstrável | Limite comercial | Situação em 25/11/2026 |
 | --- | --- | --- | --- |
 | M1 — fundação | Acesso interno, contas, revogação, auditoria e consulta mínima por concessão | Ambiente local; sem disponibilidade operacional, recuperação de conta/MFA ou exportação integral | Construção autorizada; em desenvolvimento com evidências técnicas locais |
-| M2 — fluxo | Demanda atravessa setores com responsável, checklist e histórico | Financeiro por conferência/liberação manual; documentos e agenda ainda podem ser manuais | Proposto, regras operacionais pendentes |
+| M2 — fluxo | Mesma demanda atravessa as seis etapas da cliente com responsável, checklist e histórico; pipelines são visões conectadas | Conferência/liberação e acompanhamento financeiro manuais; parcelas/recebimentos no M4; nenhum envio/cobrança externa | Desenho aprovado para construção; M2-A implementado com verificação local, B/C/D planejados; sem aceite operacional |
 | M3 — Workspace | Documentos relacionados e compromissos publicados com estado de integração | Drive/Calendar definidos; não é integração completa de todo o Workspace | Proposto |
 | M4 — financeiro gerencial | Parcelas, recebimentos e pendências acompanhados | Sem banco, pagamento ou cobrança automática | Proposto |
 | M5/M6 — implantação | Dados autorizados reconciliados, equipe treinada e operação recuperável | Depende de exportação viável, infraestrutura e aceite | Proposto |

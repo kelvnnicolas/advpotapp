@@ -6,9 +6,13 @@ Base de definição do produto e de preparação comercial para o escritório De
 
 ## Situação desta base
 
+Andamento em 26/11/2026: M1 e M2-A implementados localmente; frontend Business concluído como prévia, com 74 testes aprovados. Backend/banco multiempresa, cobrança e Google Workspace permanecem nos próximos checkpoints. [Andamento consolidado e retomada](docs/project/PROGRESS_2026-11-26.md).
+
 Em 24/11/2026, após autorização de construção, a fundação M1 executável foi criada em [output/advpotapp](output/advpotapp/README.md): Django/HTMX/PostgreSQL, acesso interno, administração de usuários, política por registro e auditoria. Está em revisão técnica local, sem aceite operacional ou produção. O estágio anterior era exclusivamente documental; as imagens demonstrativas continuam sem comprovar integrações ou indicadores reais.
 
 O chat de referência informa oito colaboradores e aproximadamente 1.500 clientes; esses números precisam ser confirmados no diagnóstico. Processos, documentos, licenças e condições de exportação ainda precisam ser levantados.
+
+Direção confirmada em 26/11/2026: o Advpot deve evoluir para colaboração com contas Workspace individuais e oferta a outros advogados/escritórios como instalação licenciada ou SaaS. Delfino é a primeira validação. [Modelo de colaboração e distribuição](output/advpotapp/docs/product/WORKSPACE_AND_DISTRIBUTION.md); integração Google e isolamento multiempresa ainda não implementados.
 
 ## Documentação
 

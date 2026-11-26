@@ -8,7 +8,7 @@ ALLOWED_HOSTS = os.environ.get('ADVPOT_ALLOWED_HOSTS', 'localhost,127.0.0.1').sp
 INSTALLED_APPS = [
     'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions',
     'django.contrib.messages', 'django.contrib.staticfiles',
-    'advpot.identity', 'advpot.audit', 'advpot.cases',
+    'advpot.identity', 'advpot.audit', 'advpot.cases', 'advpot.intake',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -27,6 +27,8 @@ TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'django.template.context_processors.request',
         'django.contrib.auth.context_processors.auth',
         'django.contrib.messages.context_processors.messages',
+        'advpot.intake.context_processors.navigation',
+        'advpot.business_frontend.context_processors.preview_navigation',
     ]}}]
 WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {'default': {

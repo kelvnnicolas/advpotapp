@@ -14,7 +14,7 @@ Consolidação: 24/11/2026. O [manifesto](INPUT_MANIFEST.json) registra caminhos
 | S04 | docs/testing/mapping-review.md, review-checklist.md, scenario-proposals.md e data-quality-report.md | Semântica confirmada e lacunas de mapeamento/cobertura |
 | S05 | data/synthetic/advbox-synthetic-test-data: README, dicionário, cenários, prompt e dataset.json | Estrutura sintética e restrições; originais não modificados |
 | S06 | data/synthetic/proposals/v1 e relatórios correspondentes | Cenários ainda propostos, não incorporados ou carregados |
-| S07 | fluxogramaclientedelfino.jpeg | Fluxo de seis etapas lido visualmente; fotografado, sem versão formal declarada |
+| S07 | [fluxogramaclientedelfino.jpeg](assets/fluxogramaclientedelfino.jpeg) | Fonte reiterada pelo usuário em 25/11/2026 para regras/fluxo M2; seis etapas e entregas lidas visualmente, sem versão formal; [transcrição e limites](DELFINO_FLOW_EVIDENCE.md) |
 | S08 | proposta_delfino_gestao_local.pptx | Texto dos 12 slides: contexto histórico, perfis e hipótese local; sem validação de preço/prazo atual |
 | S09 | Imagens demonstrativas do workspace anterior | Referências visuais com dados fictícios; não evidência de aplicação funcional |
 | W01 | [Delfino Advogados](https://www.delfinoadv.com.br/) | Conteúdo público observado no navegador em 24/11: seis áreas, contexto institucional e canais |
@@ -34,7 +34,7 @@ As fontes locais S02–S08 permanecem no diretório pai da aplicação. S01 foi 
 | Liberação financeira manual, sem quitação obrigatória | S07 + interpretação de produto | Proposta a validar |
 | Área/natureza do caso | W01 + S07 | Catálogo inicial proposto, sem afirmar demanda por volume |
 | Entrega separada de fatal | U01/S04 | Semântica de origem confirmada; implementação proposta |
-| Monólito Django/HTMX/PostgreSQL | Recomendação técnica desta entrega | Não aprovado especificamente |
+| Monólito Django/HTMX/PostgreSQL | Recomendação seguida de autorização de início M1 | Autorizado para M1 em 24/11/2026, ADR-008 |
 | Outbox, permissões por caso e controle de concorrência | Recomendação técnica desta entrega | Não observados nem copiados da ADVBOX |
 
 ## Limitações de acesso e verificação

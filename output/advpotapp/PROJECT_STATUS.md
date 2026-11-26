@@ -1,5 +1,9 @@
 # Status — Advpotapp
 
+## Continuidade e cópia no Desktop — 26/11/2026
+
+Usuário pediu salvar o progresso na pasta do projeto no Desktop e atualizar o andamento. Estado consolidado em docs/project/PROGRESS_2026-11-26.md no repositório pai: fontes, planos, testes, capturas, fixture, histórico Git e cópia lógica sanitizada dos dados devem ser preservados. A aplicação permanece em revisão local; não há movimentação do servidor, domínio, cobrança ou integração por esse salvamento. O manifesto da cópia registra arquivos, hashes e limites efetivamente verificados.
+
 ## Implementação Business — frontend primeiro — 26/11/2026
 
 Usuário autorizou iniciar estrutura e implementação por checkpoints, frontend antes de backend/banco. Branch local codex/business-frontend. CP1: oito rotas e contrato de apresentação, modelo proposto Business/Membership/assinatura/fluxo/integração, sem novas tabelas. CP2: navegação e interações demonstrativas de equipe, fluxos, configuração, assinatura, integração desconectada e contratação sem pagamento. Mesma stack/tokens; nenhuma dependência nova.

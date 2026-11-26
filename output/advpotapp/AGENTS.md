@@ -2,13 +2,15 @@
 
 ## Escopo e fontes
 
+Antes de propor ou criar software, ler [posicionamento de negócio](docs/business/BUSINESS_POSITIONING.md), [objetivo do produto](docs/product/PRODUCT_OBJECTIVE.md), [guia para agentes](docs/project/AGENT_PRODUCT_BRIEF.md) e PROJECT_STATUS.md. Essas referências consolidam a direção sem autorizar novos lotes por inferência.
+
 Esta pasta reúne o desenho de uma aplicação independente para uso interno da Delfino. Ler README, docs/specs/ADVPOTAPP_DESIGN.md, docs/context/CLIENT_DOSSIER.md, docs/data/DATA_CONTRACT.md e docs/decisions/OPEN_QUESTIONS.md antes de planejar implementações.
 
-O pedido atual é estruturar a criação. Não tratar recomendações técnicas ou regras propostas como aprovação automática para construir todos os módulos, provisionar serviços ou migrar dados. A restrição documental do dossiê pai continua valendo para a investigação da ADVBOX. Novas autorizações do usuário definem o escopo das futuras etapas.
+M1/M2-A e frontend Business foram implementados após autorizações do usuário; backend/banco Business, isolamento, cobrança e Google seguem pendentes. Não tratar recomendações técnicas ou regras propostas como aprovação automática para construir todos os módulos, provisionar serviços ou migrar dados. A restrição documental do dossiê pai continua valendo para a investigação da ADVBOX. Novas autorizações do usuário definem o escopo das futuras etapas.
 
 ## Produto
 
-- Começar pela Delfino; sem cadastro público de escritórios, cobrança SaaS ou isolamento multiempresa presumido.
+- Delfino é a primeira validação. Direção comercial confirmada: produto para outros escritórios, priorizando assinatura Business por escritório com colaboradores incluídos, sem trial. Cadastro público, cobrança e isolamento não estão implementados nem autorizados por mera referência nesta instrução.
 - Preservar a separação entre atendimento, oportunidade, contratação, caso, processo judicial, tarefa, prazo fatal e compromisso.
 - Modelar passagens entre secretaria, comercial, financeiro e operação com responsável, checklist, pendência e histórico.
 - Não exigir quitação integral para iniciar todo caso. Liberação financeira é uma decisão manual autorizada na primeira versão.
@@ -18,7 +20,7 @@ O pedido atual é estruturar a criação. Não tratar recomendações técnicas 
 
 ## Implementação futura
 
-Stack recomendada em docs/architecture/DECISIONS.md, ainda sujeita à revisão. Mudança de stack exige atualização da decisão e do roteiro. Trabalhar por lotes e manter produto, aceite e comercial coerentes.
+Stack existente Django/HTML/HTMX/PostgreSQL autorizada para a fundação e registrada em docs/architecture/DECISIONS.md. Mudança de stack exige atualização da decisão e do roteiro. Trabalhar por lotes e manter produto, aceite e comercial coerentes; não tratar mecanismo de autenticação Google, provedor financeiro ou estratégia de isolamento como escolhidos por esse registro.
 
 Validar permissões no servidor, por ação e registro; controles visuais não bastam. Sessões, CSRF, segredos, auditoria e revogação são requisitos da fundação. Grupos Django não implementam sozinhos autorização por caso.
 

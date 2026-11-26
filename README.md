@@ -16,6 +16,8 @@ Direção confirmada em 26/11/2026: o Advpot deve evoluir para colaboração com
 
 ## Documentação
 
+Para agentes de software: [posicionamento do negócio](output/advpotapp/docs/business/BUSINESS_POSITIONING.md), [objetivo do produto](output/advpotapp/docs/product/PRODUCT_OBJECTIVE.md) e [guia de implementação orientado ao produto](output/advpotapp/docs/project/AGENT_PRODUCT_BRIEF.md).
+
 | Documento | Finalidade |
 | --- | --- |
 | [Estratégia do produto](docs/product/PRODUCT_STRATEGY.md) | Posicionamento e limites permanentes |

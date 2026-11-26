@@ -2,6 +2,8 @@
 
 ## Leitura inicial
 
+Para orientar agentes de software, ler primeiro [posicionamento do negócio](output/advpotapp/docs/business/BUSINESS_POSITIONING.md), [objetivo do produto](output/advpotapp/docs/product/PRODUCT_OBJECTIVE.md) e [guia de direção para agentes](output/advpotapp/docs/project/AGENT_PRODUCT_BRIEF.md), junto do status atual da aplicação.
+
 Antes de propor ou implementar funcionalidades, ler `README.md`, `docs/product/PRODUCT_STRATEGY.md`, `docs/product/PRODUCT_BLUEPRINT.md` e `docs/project/PROJECT_PLAYBOOK.md`. Para materiais comerciais, ler também `docs/commercial/COMMERCIAL_STRATEGY.md`.
 
 ## Diretrizes
@@ -25,4 +27,4 @@ Verificar os fluxos alterados, inclusive permissões e falhas de integração qu
 
 ## Limites desta versão
 
-Esta base é documental. O recorte de produto, regras detalhadas e etapas são propostas para validação com o escritório. Não iniciar uma aplicação inteira apenas porque os módulos constam no blueprint; implementar o lote explicitamente autorizado.
+Esta base reúne documentação e implementação local autorizada de M1/M2-A e prévia frontend Business. Consultar o status atual para distinguir implementação de proposta. Não iniciar uma aplicação inteira apenas porque os módulos constam no blueprint; implementar o lote explicitamente autorizado. A direção comercial prioriza assinatura por escritório com colaboradores incluídos, sem trial; quantidade, preço, frequência, provedor e isolamento ainda exigem decisões próprias.

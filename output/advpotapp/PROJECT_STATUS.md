@@ -1,5 +1,11 @@
 # Status — Advpotapp
 
+## Direcionamento de agentes de software — 26/11/2026
+
+Usuário solicitou arquivos Markdown de posicionamento e objetivo para orientar agentes. Criadas referências canônicas em docs/business/BUSINESS_POSITIONING.md, docs/product/PRODUCT_OBJECTIVE.md e docs/project/AGENT_PRODUCT_BRIEF.md. AGENTS.md e READMEs apontam a leitura; instruções antigas de base exclusivamente documental foram conciliadas com M1/M2-A e frontend já implementados.
+
+Definições consolidadas: gestão jurídica colaborativa, Delfino como primeira validação, assinatura por escritório com colaboradores incluídos e sem trial, Workspace como colaboração e Advpot como fonte jurídica. Mantidas as decisões pendentes e os limites de autorização. Etapa somente documental, sem alterar código, banco, cobrança ou integrações. A validação desta entrega é de links/coerência; não é nova execução da suíte funcional.
+
 ## Continuidade e cópia no Desktop — 26/11/2026
 
 Usuário pediu salvar o progresso na pasta do projeto no Desktop e atualizar o andamento. Estado consolidado em docs/project/PROGRESS_2026-11-26.md no repositório pai: fontes, planos, testes, capturas, fixture, histórico Git e cópia lógica sanitizada dos dados devem ser preservados. A aplicação permanece em revisão local; não há movimentação do servidor, domínio, cobrança ou integração por esse salvamento. O manifesto da cópia registra arquivos, hashes e limites efetivamente verificados.

@@ -2,6 +2,8 @@
 
 Versão 1 · Proposta funcional para validação. Nenhum recurso abaixo está comprovado como implementado nesta pasta.
 
+Atualização de direção em 26/11/2026: colaboração com Workspace individual e distribuição do produto a outros escritórios por instalação licenciada ou SaaS. O blueprint passa a prever identidade, participação no escritório e integrações como controles separados. Isolamento entre escritórios é requisito anterior ao uso multiempresa; não capacidade existente. [Detalhamento](../../output/advpotapp/docs/product/WORKSPACE_AND_DISTRIBUTION.md).
+
 ## Recorte recomendado
 
 Primeiro comprovar o fluxo atendimento → cliente → caso/processo → tarefa/prazo → documento → acompanhamento. Organizar o trabalho em núcleo e lotes conectados, evitando contratar um sistema amplo sem critérios de conclusão.

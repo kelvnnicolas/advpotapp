@@ -10,6 +10,8 @@ Em 24/11/2026, após autorização de construção, a fundação M1 executável 
 
 O chat de referência informa oito colaboradores e aproximadamente 1.500 clientes; esses números precisam ser confirmados no diagnóstico. Processos, documentos, licenças e condições de exportação ainda precisam ser levantados.
 
+Direção confirmada em 26/11/2026: o Advpot deve evoluir para colaboração com contas Workspace individuais e oferta a outros advogados/escritórios como instalação licenciada ou SaaS. Delfino é a primeira validação. [Modelo de colaboração e distribuição](output/advpotapp/docs/product/WORKSPACE_AND_DISTRIBUTION.md); integração Google e isolamento multiempresa ainda não implementados.
+
 ## Documentação
 
 | Documento | Finalidade |

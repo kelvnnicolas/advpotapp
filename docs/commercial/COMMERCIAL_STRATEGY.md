@@ -10,6 +10,10 @@ Na reunião, partir do problema real: onde o atendimento perde continuidade, com
 
 Evitar vender “todos os recursos de outro sistema por menos”. Não prometer indicadores de ganho sem linha de base e medição.
 
+## Modalidades de distribuição — direção de 26/11/2026
+
+O produto deverá atender outros profissionais e escritórios. As duas ofertas a estruturar são instalação licenciada independente e SaaS gerenciado; nenhuma tem preço ou prontidão comercial presumidos. Definir implantação, atualizações, suporte, infraestrutura, direito de uso/código e saída por modalidade. Licenças Workspace são item separado salvo composição expressa. A proposta deve informar que SSO, Drive/Calendar e isolamento multiempresa ainda não estão implementados. [Desenho comercial e colaborativo](../../output/advpotapp/docs/product/WORKSPACE_AND_DISTRIBUTION.md).
+
 ## Oferta recomendada
 
 | Componente | O que se contrata | Como limitar |

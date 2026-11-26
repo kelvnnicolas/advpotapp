@@ -4,6 +4,8 @@ Aplicação interna Delfino · Proposta de recorte, sem preço ou prazo aprovado
 
 ## Escopo por marco
 
+Direção comercial confirmada em 26/11/2026: Delfino é a primeira validação de produto replicável para outros advogados e escritórios. Instalação licenciada e SaaS são modalidades previstas, ainda sem escolha de prioridade, condições, preço ou prazo. [Modalidades e requisitos de colaboração/isolamento](../product/WORKSPACE_AND_DISTRIBUTION.md). Nenhum lote existente comprova prontidão multiempresa ou integração Google.
+
 | Marco | Valor demonstrável | Limite comercial | Situação em 25/11/2026 |
 | --- | --- | --- | --- |
 | M1 — fundação | Acesso interno, contas, revogação, auditoria e consulta mínima por concessão | Ambiente local; sem disponibilidade operacional, recuperação de conta/MFA ou exportação integral | Construção autorizada; em desenvolvimento com evidências técnicas locais |

@@ -29,6 +29,10 @@ Atualização de 24/11/2026: stack e início do M1 foram autorizados pelo usuár
 | Metadados de caso restrito nas filas | Referência opaca e mínimo necessário; conteúdo exige concessão | Gestão e responsáveis de setor; evita exposição indireta |
 | Pendência financeira após liberação | Registro/escalonamento, sem suspensão automática de tarefas/prazos | Financeiro e jurídico; define efeitos e autorização de suspensão |
 
+## Expansão comercial — direção confirmada em 26/11/2026
+
+Não perguntar novamente se o produto poderá atender outros escritórios: o usuário confirmou essa intenção, por instalação licenciada ou SaaS, com contas Workspace individuais e colaboração. [Detalhamento](../product/WORKSPACE_AND_DISTRIBUTION.md). Ainda definir modalidade prioritária, operação da infraestrutura/projeto OAuth, participação multi-escritório, política de recursos institucionais e condições da oferta. Decisão de isolamento e novo mecanismo de identidade precede a implementação correspondente.
+
 ## Antes de Workspace e financeiro
 
 Conta/plano Workspace, propriedade de pastas, agenda de destino, escopos, revogação e acesso documental; condições de contratação, parcelas, recebimento parcial, descontos/correções e moeda; campos/checklists por área; necessidade de envio de convites. Não inferir conta a partir do domínio do site.

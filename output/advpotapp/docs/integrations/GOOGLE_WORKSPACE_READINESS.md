@@ -4,6 +4,8 @@
 
 ## O que existe e o que falta
 
+Direção atualizada pelo usuário em 26/11/2026: colaboração com contas Workspace individuais e evolução comercial para outros escritórios por instalação licenciada ou SaaS. [Detalhamento de identidade, colaboração e distribuição](../product/WORKSPACE_AND_DISTRIBUTION.md). A instalação atual permanece única; a expansão requer isolamento antes de dados de escritórios distintos no mesmo ambiente.
+
 | Necessidade | Situação atual | Entrega antes de dados reais |
 | --- | --- | --- |
 | Registros jurídicos como fonte principal | Contact, Demand, Case; vínculo contato/demanda; UUIDs, autoria e versões | Fechar mapeamento dos campos reais por lote; casos atuais ainda são envelopes mínimos |

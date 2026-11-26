@@ -12,6 +12,10 @@ O Advpot organiza a operação jurídica em uma plataforma adaptada à rotina do
 
 O cliente compra continuidade entre atendimento, execução e acompanhamento da operação. A personalização precisa aparecer em fluxos e indicadores úteis, e não apenas em cores ou logotipo.
 
+## Direção confirmada em 26/11/2026
+
+O usuário definiu colaboração por contas Workspace individuais e comercialização futura para outros advogados/escritórios por instalação licenciada ou SaaS. Delfino é a primeira validação, não o limite de público do produto. Modalidade prioritária, isolamento, identidade Google e condições comerciais exigem planos próprios. [Detalhamento e estágios](../../output/advpotapp/docs/product/WORKSPACE_AND_DISTRIBUTION.md).
+
 ## Público inicial e resultado esperado
 
 O escritório Delfino é a referência inicial de operação. O chat informa oito colaboradores e cerca de 1.500 clientes, sujeitos a confirmação. Não assumir que exista um produto multiempresa ou que essa base dimensione sozinha a infraestrutura.

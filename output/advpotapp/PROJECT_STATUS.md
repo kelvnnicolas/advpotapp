@@ -1,5 +1,13 @@
 # Status — Advpotapp
 
+## Direção colaborativa e comercial — 26/11/2026
+
+Usuário confirmou intenção de cada colaborador usar sua conta Workspace no Advpot e de oferecer o produto a outros advogados/escritórios como instalação licenciada ou SaaS. Delfino permanece a primeira validação; exclusividade da instalação inicial não é exclusividade comercial do produto.
+
+Entregue [detalhamento Workspace e distribuição](docs/product/WORKSPACE_AND_DISTRIBUTION.md): identidade versus consentimento versus participação no escritório, permissões Google/Advpot, recursos institucionais, desligamento, modelos de oferta e fronteiras de isolamento. Fontes oficiais Google verificadas. Atualizados posicionamento, escopo e nota de arquitetura. A direção vem do usuário; as opções técnicas, mecanismos de colaboração e sequência são propostas para o próximo plano.
+
+Somente documentação nesta etapa. Sem alteração de dados, schema, autenticação, integrações, papéis reais, hospedagem ou cobrança. Os testes anteriores validam a instalação local, não SSO/SaaS. Isolamento multiempresa, conexão Google e operação comercial permanecem não implementados; nenhum preço/prazo ou modalidade prioritária foi aprovado.
+
 ## Base fictícia e preparação Workspace — 26/11/2026
 
 Usuário autorizou alimentar a aplicação com dados sintéticos e verificar a preparação para dados reais/Workspace. Criado pacote próprio advpot.local-demo.v1: 6 contatos, 8 demandas e 3 envelopes de caso identificados como fictícios. Carga transacional local executada; repetição criou zero demandas novas. Conta teste manteve senha e perfil Profissional, recebeu Secretaria/Comercial e concessões somente aos registros demonstrativos. Auxiliar demo.recepcao sem senha utilizável representa uma origem de passagem. Não foi criada autoridade/administração de negócio nem carregada a base Aurora.

@@ -10,6 +10,8 @@ Abrir [http://127.0.0.1:8765/entrar/](http://127.0.0.1:8765/entrar/) com o servi
 
 Protótipos: [Advpotapp — Delfino no Stitch](https://stitch.withgoogle.com/projects/10692539038282260634). São referências visuais para revisão, não comprovam disponibilidade de módulos futuros.
 
+Direção confirmada em 26/11/2026: produto replicável para outros advogados/escritórios por instalação licenciada ou SaaS, com colaboração por contas Workspace. Delfino permanece o primeiro escritório. [Funcionamento previsto, responsabilidades e limites](docs/product/WORKSPACE_AND_DISTRIBUTION.md). A instalação atual continua única, sem SSO ou isolamento multiempresa.
+
 ## Decisões e limites
 
 Para revisão com a conta `teste`: [base fictícia local v1](docs/data/LOCAL_DEMO_V1.md), com contatos, demandas e casos demonstrativos. [Preparação para Google Workspace](docs/integrations/GOOGLE_WORKSPACE_READINESS.md): arquitetura compatível com evolução; Drive/Calendar ainda sem adaptadores, OAuth ou sincronização operacional.

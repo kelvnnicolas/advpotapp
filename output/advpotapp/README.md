@@ -2,7 +2,7 @@
 
 **Gestão jurídica conectada. Tecnologia sob medida. Liberdade para evoluir.**
 
-Aplicação interna, atualizada em 25/11/2026. Construção M1 no workspace atual, em `output/advpotapp`. O caminho Desktop citado na estruturação anterior permanece uma referência histórica; não foi criado ou alterado.
+Aplicação em desenvolvimento, atualizada em 26/11/2026. M1/M2-A e frontend Business estão em revisão local no workspace atual, em `output/advpotapp`. Uma cópia de continuidade foi salva em Desktop/projetos/advpot/advpotapp; o servidor continua no ambiente original. Não há produção ou SaaS multiempresa disponível.
 
 **M1 implementado para revisão técnica local:** login interno, limitação persistida de tentativas, administração de contas, revogação de sessões, política por caso/ação, auditoria, interface em português e exportação mínima autorizada. PostgreSQL local criado e migrações aplicadas. Nenhuma carga Aurora ou dado real, integração externa ou implantação em VPS.
 
@@ -29,6 +29,8 @@ Para revisão com a conta `teste`: [base fictícia local v1](docs/data/LOCAL_DEM
 - **Material da empresa:** o fluxo fotografado do escritório orienta as passagens entre setores; o site público orienta áreas e contexto institucional.
 
 ## Ordem de leitura
+
+Agentes de software devem começar por [posicionamento de negócio](docs/business/BUSINESS_POSITIONING.md), [objetivo do produto](docs/product/PRODUCT_OBJECTIVE.md) e [guia de direção](docs/project/AGENT_PRODUCT_BRIEF.md), conferindo o status antes de implementar. As referências abaixo aprofundam a execução.
 
 1. [Contexto da cliente e conciliação das fontes](docs/context/CLIENT_DOSSIER.md).
 2. [Estratégia do produto](docs/product/PRODUCT_STRATEGY.md).

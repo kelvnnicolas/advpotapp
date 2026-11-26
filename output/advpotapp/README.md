@@ -12,6 +12,8 @@ Protótipos: [Advpotapp — Delfino no Stitch](https://stitch.withgoogle.com/pro
 
 ## Decisões e limites
 
+Para revisão com a conta `teste`: [base fictícia local v1](docs/data/LOCAL_DEMO_V1.md), com contatos, demandas e casos demonstrativos. [Preparação para Google Workspace](docs/integrations/GOOGLE_WORKSPACE_READINESS.md): arquitetura compatível com evolução; Drive/Calendar ainda sem adaptadores, OAuth ou sincronização operacional.
+
 **M2-A aprovado e implementado para revisão local:** clientes/contatos, demandas, lista/quadro comercial e passagem Secretaria → Comercial com aceite, concessões por registro, histórico e recuperação de responsabilidade. [Evidências do recorte](docs/testing/M2A_VERIFICATION.md). Contratação e financeiro permanecem nos próximos lotes; sem disponibilidade operacional declarada.
 
 - **Confirmado pelo usuário:** começar por uma aplicação interna exclusiva da Delfino. Atendimento a outros escritórios é evolução posterior.

@@ -1,0 +1,28 @@
+{
+  "schema": "advpot.local-demo.v1",
+  "reference_date": "2026-11-26",
+  "synthetic": true,
+  "contacts": [
+    {"code": "C01", "name": "[FICTÍCIO] Cliente Horizonte 01", "kind": "person"},
+    {"code": "C02", "name": "[FICTÍCIO] Cliente Horizonte 02", "kind": "person"},
+    {"code": "C03", "name": "[FICTÍCIO] Cliente Horizonte 03", "kind": "person"},
+    {"code": "C04", "name": "[FICTÍCIO] Organização Horizonte 04", "kind": "organization"},
+    {"code": "C05", "name": "[FICTÍCIO] Organização Horizonte 05", "kind": "organization"},
+    {"code": "C06", "name": "[FICTÍCIO] Cliente Horizonte 06", "kind": "person"}
+  ],
+  "demands": [
+    {"code": "D01", "contact": "C01", "title": "Triagem de documentos cíveis", "area": "Cível", "state": "triage", "on": "2026-11-26"},
+    {"code": "D02", "contact": "C02", "title": "Retorno sobre atendimento previdenciário", "area": "Previdenciário", "state": "triage", "on": "2026-11-27"},
+    {"code": "D03", "contact": "C03", "title": "Passagem para diagnóstico trabalhista", "area": "Trabalhista", "state": "pending", "on": "2026-11-27"},
+    {"code": "D04", "contact": "C04", "title": "Diagnóstico consultivo empresarial", "area": "Consultivo", "state": "diagnosis", "on": "2026-11-30"},
+    {"code": "D05", "contact": "C05", "title": "Proposta de revisão documental", "area": "Consultivo", "state": "proposal", "on": "2026-12-01"},
+    {"code": "D06", "contact": "C01", "title": "Preparação de formalização consultiva", "area": "Cível", "state": "formalization", "on": "2026-12-02"},
+    {"code": "D07", "contact": "C06", "title": "Oportunidade encerrada por desistência", "area": "Consumidor", "state": "lost", "on": "2026-11-26"},
+    {"code": "D08", "contact": "C02", "title": "Solicitação cancelada na demonstração", "area": "Previdenciário", "state": "cancelled", "on": "2026-11-26"}
+  ],
+  "cases": [
+    {"code": "K01", "title": "Consulta cível — envelope mínimo M1"},
+    {"code": "K02", "title": "Revisão documental — envelope mínimo M1"},
+    {"code": "K03", "title": "Atendimento consultivo — envelope mínimo M1"}
+  ]
+}

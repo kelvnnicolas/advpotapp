@@ -1,5 +1,13 @@
 # Status — Advpotapp
 
+## Base fictícia e preparação Workspace — 26/11/2026
+
+Usuário autorizou alimentar a aplicação com dados sintéticos e verificar a preparação para dados reais/Workspace. Criado pacote próprio advpot.local-demo.v1: 6 contatos, 8 demandas e 3 envelopes de caso identificados como fictícios. Carga transacional local executada; repetição criou zero demandas novas. Conta teste manteve senha e perfil Profissional, recebeu Secretaria/Comercial e concessões somente aos registros demonstrativos. Auxiliar demo.recepcao sem senha utilizável representa uma origem de passagem. Não foi criada autoridade/administração de negócio nem carregada a base Aurora.
+
+Verificação: 63 testes PostgreSQL aprovados, incluindo navegador; check e migrações sem pendências. [Uso e limites da base](docs/data/LOCAL_DEMO_V1.md). Sem dados reais, arquivos, processos judiciais, documentos, eventos ou operações financeiras simulados como capacidades prontas.
+
+[Preparação Workspace](docs/integrations/GOOGLE_WORKSPACE_READINESS.md) confronta o código com a arquitetura e documentação oficial Google: relações, UUIDs, permissões e transações existentes; faltam OAuth, tokens protegidos, DocumentReference/Appointment, SourceMapping, outbox/worker, adaptadores e testes de reconciliação/falhas. Integração operacional e importação real **não estão prontas**. Drive/Calendar permanecem M3; nenhuma conexão externa ativada, novo serviço, custo ou prazo comercial assumido.
+
 ## M2-A — construção autorizada — 25/11/2026
 
 Usuário aprovou desenho e continuidade. Implementado clientes/contatos, demandas vinculadas, pipeline comercial, primeira passagem Secretaria → Comercial com aceite, setor e concessões por registro/ação, histórico e recuperação após revogação. Contratação e financeiro permanecem nos próximos lotes.

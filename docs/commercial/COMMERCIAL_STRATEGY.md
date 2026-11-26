@@ -26,6 +26,8 @@ O produto deverá atender outros profissionais e escritórios. As duas ofertas a
 
 Recomenda-se uma oferta inicial clara, em vez de planos que prometam personalização irrestrita. Se o diagnóstico for pago, informar se haverá abatimento na implantação; se gratuito, delimitar seu alcance.
 
+Prioridade selecionada pelo usuário: assinatura por escritório com colaboradores incluídos; um responsável Business contrata e administra a equipe. Sem período gratuito. Ainda definir vagas, periodicidade, valor, cancelamento e atraso. Não cobrar individualmente cada colaborador por inferência nem prometer usuários ilimitados. [Avaliação do modelo Business](../../output/advpotapp/docs/product/BUSINESS_SAAS_EVALUATION.md).
+
 ## Formação do investimento
 
 Calcular internamente a implantação pelo esforço de diagnóstico, desenho, construção/configuração, integrações, migração, verificação, treinamento, gestão e transição. Incluir custos diretos, tributos aplicáveis, reserva de incerteza e margem sem dupla contagem. Aplicar desconto somente após conhecer o custo e o limite mínimo sustentável.

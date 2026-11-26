@@ -31,7 +31,7 @@ Atualização de 24/11/2026: stack e início do M1 foram autorizados pelo usuár
 
 ## Expansão comercial — direção confirmada em 26/11/2026
 
-Não perguntar novamente se o produto poderá atender outros escritórios: o usuário confirmou essa intenção, por instalação licenciada ou SaaS, com contas Workspace individuais e colaboração. [Detalhamento](../product/WORKSPACE_AND_DISTRIBUTION.md). Ainda definir modalidade prioritária, operação da infraestrutura/projeto OAuth, participação multi-escritório, política de recursos institucionais e condições da oferta. Decisão de isolamento e novo mecanismo de identidade precede a implementação correspondente.
+Não perguntar novamente se o produto poderá atender outros escritórios: o usuário confirmou essa intenção, por instalação licenciada ou SaaS, com contas Workspace individuais e colaboração. [Detalhamento](../product/WORKSPACE_AND_DISTRIBUTION.md). Prioridade comercial escolhida: assinatura por escritório com colaboradores incluídos, sem trial. Ainda definir vagas, periodicidade, preço, provedor, cancelamento/atraso, operação da infraestrutura/projeto OAuth e participação multi-escritório. Avaliação em docs/product/BUSINESS_SAAS_EVALUATION.md. Decisão de isolamento e novo mecanismo de identidade precede a implementação correspondente.
 
 ## Antes de Workspace e financeiro
 

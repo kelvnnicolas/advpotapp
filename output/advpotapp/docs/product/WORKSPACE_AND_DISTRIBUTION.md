@@ -40,6 +40,8 @@ Licenças Workspace e acesso Advpot são contratações distintas, salvo composi
 
 ## 5. Duas modalidades comerciais
 
+Atualização desta avaliação em 26/11/2026: o usuário escolheu priorizar assinatura por escritório com colaboradores incluídos. [Conta Business, checkout e liberação de acesso](BUSINESS_SAAS_EVALUATION.md). Instalação licenciada continua alternativa futura; número de vagas, frequência, preço, provedor e isolamento ainda precisam ser definidos.
+
 | Modalidade | Entrega a definir | Responsabilidade a fechar | Limite atual |
 | --- | --- | --- | --- |
 | Instalação licenciada por escritório (“cópia do sistema”) | Mesma versão do produto, instalação/configuração independente, marca e fluxos nos limites contratados | Operador da VPS, banco, backup, atualização, domínio, projeto OAuth, suporte e direito de acesso ao código | Licença de uso não define sozinha cessão de código, exclusividade ou customização ilimitada |
@@ -64,4 +66,4 @@ Implementado para revisão local: fundação M1, recorte operacional M2-A e base
 
 Sequência proposta: fechar documento de identidade/colaboração e modalidade de primeira comercialização; manter recorte operacional M2; implementar identidade Google e isolamento na ordem exigida pelo próximo piloto; executar Drive/Calendar com ambiente institucional de homologação; testar dois escritórios sintéticos sem vazamento; só depois homologar implantação comercial. Isolamento precisa preceder qualquer convivência real entre escritórios no mesmo ambiente, e os dados fictícios não vão para produção.
 
-O próximo plano técnico deve comparar alternativas, dependências, impacto de migração/custo e aceites antes de alterar schema ou autenticação. Permanecem pendentes responsáveis e contas reais, modalidade prioritária, gestão de infraestrutura/OAuth e condições de oferta. Não bloqueiam o detalhamento solicitado, mas impedem declarar a plataforma já pronta para comercialização.
+O próximo plano técnico deve comparar alternativas, dependências, impacto de migração/custo e aceites antes de alterar schema ou autenticação. A prioridade de avaliação agora é assinatura Business por escritório. Permanecem pendentes responsáveis/contas reais, plano/vagas/preço/frequência, gestão de infraestrutura/OAuth, provedor de pagamento e condições da oferta. Não bloqueiam o detalhamento solicitado, mas impedem declarar a plataforma já pronta para comercialização.

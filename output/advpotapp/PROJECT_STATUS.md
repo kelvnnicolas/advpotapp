@@ -1,5 +1,13 @@
 # Status — Advpotapp
 
+## Avaliação SaaS Business e checkout — 26/11/2026
+
+Usuário propôs conta Business com colaboradores/fluxos, checkout e entrada vinculada ao pagamento, sem teste gratuito. Escolha explícita na avaliação: priorizar assinatura por escritório com colaboradores incluídos. Preço, frequência, quantidade de vagas, provedor, isolamento físico/lógico e política de atraso permanecem pendentes.
+
+Entregue [avaliação do SaaS Business](docs/product/BUSINESS_SAAS_EVALUATION.md): contratação, confirmação servidor-servidor, validade de acesso por Business, renovação/cancelamento, regularização, administração por escritório e lacunas da implementação. Stripe e Mercado Pago consultados como alternativas, sem seleção ou ativação. Sem trial não significa dispensar sandbox e verificação técnica.
+
+Etapa documental: nenhuma alteração de código, banco, autenticação ou papel, nenhum checkout/webhook criado e nenhuma cobrança/envio. Avaliação de caminho vendável não é autorização de movimentar dinheiro ou declaração de SaaS pronto. Copy licenciada permanece alternativa futura; prioridade comercial avaliada agora é assinatura gerenciada por escritório.
+
 ## Direção colaborativa e comercial — 26/11/2026
 
 Usuário confirmou intenção de cada colaborador usar sua conta Workspace no Advpot e de oferecer o produto a outros advogados/escritórios como instalação licenciada ou SaaS. Delfino permanece a primeira validação; exclusividade da instalação inicial não é exclusividade comercial do produto.

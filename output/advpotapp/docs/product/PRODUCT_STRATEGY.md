@@ -46,6 +46,8 @@ Não prometer paridade integral com ADVBOX, economia fixa, integração completa
 
 “Plataforma própria” significa experiência e configuração adaptadas ao escritório. Titularidade do código, licença de uso, acesso ao repositório e direito de manutenção por terceiros são condições a definir expressamente; não decorrem dessa expressão.
 
+Prioridade comercial escolhida pelo usuário na avaliação de 26/11/2026: assinatura Business por escritório, com colaboradores incluídos e sem trial. Vagas, preço, frequência e provedor ainda precisam ser definidos. [Avaliação de checkout e direito de uso](BUSINESS_SAAS_EVALUATION.md).
+
 ## Como priorizar
 
 Priorizar demandas que concluam um fluxo frequente, reduzam risco operacional ou removam dependência de implantação. Entre demandas equivalentes, escolher a de menor esforço e custo recorrente. Adiar recursos sem usuário definido, aceite verificável ou responsável por mantê-los.
